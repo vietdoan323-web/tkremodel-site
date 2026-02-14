@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | TK Remodeling & Roofing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="mark">TK</div>
+        <div class="name">
+          <strong>TK Remodeling & Roofing</strong>
+          <span>Commercial Tenant Finishes</span>
+        </div>
+      </div>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2>Request a Bid</h2>
+    <p class="lead">Send your project details and we’ll follow up.</p>
+
+    <div class="split">
+      <div class="panel">
+        <form class="form" onsubmit="return sendEmail(event)">
+          <input class="input" id="name" placeholder="Your name" required />
+          <input class="input" id="company" placeholder="Company (optional)" />
+          <input class="input" id="email" placeholder="Email" type="email" required />
+          <input class="input" id="phone" placeholder="Phone" />
+          <input class="input" id="type" placeholder="Project type (Commercial TI / Home Remodel)" />
+          <textarea class="input" id="msg" placeholder="Scope, address/city, timeline, and any drawings/photos you have" required></textarea>
+
+          <button class="btn primary" type="submit">Send Request</button>
+
+          <div class="notice">
+            This opens your email app to send the message. Later, we can upgrade to a real form that captures leads automatically.
+          </div>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h3 style="margin-top:0;">Contact</h3>
+        <p class="lead" style="margin-bottom:10px;">Update this later with your real info:</p>
+
+        <p style="margin:0;color:rgba(17,24,39,.8);line-height:1.7">
+          <strong>Phone:</strong> (913) XXX-XXXX<br/>
+          <strong>Email:</strong> bids@tkremodel.com<br/>
+          <strong>Service Area:</strong> Kansas City Metro
+        </p>
+
+        <div style="margin-top:14px;">
+          <a class="btn" href="projects.html">See Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div>© <span id="year"></span> TK Remodeling & Roofing LLC</div>
+      <div class="small">Commercial Tenant Finishes · Kansas City</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  function sendEmail(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const company = document.getElementById('company').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const type = document.getElementById('type').value;
+    const msg = document.getElementById('msg').value;
+
+    const subject = encodeURIComponent(`Bid Request — ${type || 'Project'}`);
+    const body = encodeURIComponent(
+`Name: ${name}
+Company: ${company}
+Email: ${email}
+Phone: ${phone}
+Project Type: ${type}
+
+Details:
+${msg}`
+    );
+
+    // Change this later to your real inbox:
+    window.location.href = `mailto:bids@tkremodel.com?subject=${subject}&body=${body}`;
+    return false;
+  }
+</script>
+
+</body>
+</html>
