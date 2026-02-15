@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Projects | TK Remodeling & Roofing</title>
+  <title>Projects | TK Remodeling</title>
+  <meta name="description" content="Selected commercial build-outs and tenant improvements across Greater Kansas City and Johnson County, Kansas."/>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,18 +12,19 @@
 <header class="topbar">
   <div class="container">
     <div class="nav">
-      <div class="brand">
+      <a class="brand" href="index.html">
         <div class="mark">TK</div>
         <div class="name">
-          <strong>TK Remodeling & Roofing</strong>
-          <span>Commercial Tenant Finishes</span>
+          <strong>TK Remodeling</strong>
+          <span>Licensed & Insured General Contractor</span>
         </div>
-      </div>
+      </a>
       <nav class="links">
-        <a href="index.html">Home</a>
+        <a href="projects.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="restoration.html">Restoration</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="btn">Contact</a>
-        <a href="contact.html" class="btn primary">Request a Bid</a>
+        <a href="contact.html" class="btn primary">Contact</a>
       </nav>
     </div>
   </div>
@@ -30,37 +32,29 @@
 
 <main class="section">
   <div class="container">
-    <h2>Our Projects</h2>
+    <h2>Selected Commercial Projects</h2>
     <p class="lead">
-      A sample of commercial tenant finishes and large remodel projects.
+      Serving Greater Kansas City and Johnson County, Kansas.
+      Built for projects that require coordination — not patchwork renovation.
+    </p>
+    <p class="small">
+      Commercial projects typically ranging from 2,000 to 10,000 square feet.
     </p>
 
-    <div class="cards">
+    <div id="projectsGrid" class="proj-grid"></div>
 
-      <div class="card">
-        <h3>Medical Office Build-Out</h3>
-        <p>
-          Full tenant finish including framing, MEP coordination,
-          drywall, flooring, and final inspections.
-        </p>
-      </div>
+    <div class="spacer"></div>
 
-      <div class="card">
-        <h3>Restaurant Tenant Improvement</h3>
-        <p>
-          Complete commercial kitchen build-out,
-          plumbing rough-ins, electrical upgrades, and finishes.
-        </p>
-      </div>
+    <h2>Client Feedback</h2>
+    <p class="lead">A few words from commercial clients and partners.</p>
+    <div id="testimonialsGrid" class="tgrid"></div>
 
-      <div class="card">
-        <h3>Retail Space Remodel</h3>
-        <p>
-          Demolition, layout reconfiguration,
-          new storefront finishes and interior upgrades.
-        </p>
-      </div>
+    <div class="spacer"></div>
 
+    <div class="cta">
+      <h3>Request a Project Consultation</h3>
+      <p class="lead">Share the address, timeline, and scope — we’ll follow up to discuss next steps.</p>
+      <a class="btn primary" href="contact.html">Contact</a>
     </div>
   </div>
 </main>
@@ -68,8 +62,8 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div>© <span id="year"></span> TK Remodeling & Roofing LLC</div>
-      <div class="small">Commercial Tenant Finishes · Kansas City</div>
+      <div>© <span id="year"></span> TK Remodeling</div>
+      <div class="small">Greater Kansas City • Johnson County, KS</div>
     </div>
   </div>
 </footer>
@@ -77,6 +71,7 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<script src="projects.js"></script>
 
 </body>
 </html>
