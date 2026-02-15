@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact | TK Remodeling & Roofing</title>
+  <title>Contact | TK Remodeling</title>
+  <meta name="description" content="Request a project consultation with TK Remodeling. Licensed & Insured General Contractor serving Greater Kansas City and Johnson County, Kansas."/>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,17 +12,19 @@
 <header class="topbar">
   <div class="container">
     <div class="nav">
-      <div class="brand">
+      <a class="brand" href="index.html">
         <div class="mark">TK</div>
         <div class="name">
-          <strong>TK Remodeling & Roofing</strong>
-          <span>Commercial Tenant Finishes</span>
+          <strong>TK Remodeling</strong>
+          <span>Licensed & Insured General Contractor</span>
         </div>
-      </div>
+      </a>
       <nav class="links">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="restoration.html">Restoration</a>
         <a href="about.html">About</a>
+        <a href="contact.html" class="btn primary active">Contact</a>
       </nav>
     </div>
   </div>
@@ -29,41 +32,70 @@
 
 <main class="section">
   <div class="container">
-    <h2>Request a Bid</h2>
-    <p class="lead">Send your project details and we’ll follow up.</p>
+    <h2>Request a Project Consultation</h2>
+    <p class="lead">
+      Provide your project details below and our team will follow up to discuss next steps.
+      For restoration inquiries, this link may direct to our restoration division site later.
+    </p>
 
-    <div class="split">
-      <div class="panel">
-        <form class="form" onsubmit="return sendEmail(event)">
-          <input class="input" id="name" placeholder="Your name" required />
-          <input class="input" id="company" placeholder="Company (optional)" />
-          <input class="input" id="email" placeholder="Email" type="email" required />
-          <input class="input" id="phone" placeholder="Phone" />
-          <input class="input" id="type" placeholder="Project type (Commercial TI / Home Remodel)" />
-          <textarea class="input" id="msg" placeholder="Scope, address/city, timeline, and any drawings/photos you have" required></textarea>
-
-          <button class="btn primary" type="submit">Send Request</button>
-
-          <div class="notice">
-            This opens your email app to send the message. Later, we can upgrade to a real form that captures leads automatically.
+    <div class="card" style="margin-top:14px;">
+      <form class="form" action="mailto:youremail@domain.com" method="post" enctype="text/plain">
+        <div class="grid-2">
+          <div>
+            <label>Full Name</label>
+            <input name="Name" type="text" placeholder="Your name" required />
           </div>
-        </form>
-      </div>
-
-      <div class="panel">
-        <h3 style="margin-top:0;">Contact</h3>
-        <p class="lead" style="margin-bottom:10px;">Update this later with your real info:</p>
-
-        <p style="margin:0;color:rgba(17,24,39,.8);line-height:1.7">
-          <strong>Phone:</strong> (913) XXX-XXXX<br/>
-          <strong>Email:</strong> bids@tkremodel.com<br/>
-          <strong>Service Area:</strong> Kansas City Metro
-        </p>
-
-        <div style="margin-top:14px;">
-          <a class="btn" href="projects.html">See Projects</a>
+          <div>
+            <label>Phone</label>
+            <input name="Phone" type="tel" placeholder="(###) ###-####" required />
+          </div>
+          <div>
+            <label>Email</label>
+            <input name="Email" type="email" placeholder="you@email.com" required />
+          </div>
+          <div>
+            <label>Business / Organization</label>
+            <input name="Business" type="text" placeholder="Business name (optional)" />
+          </div>
         </div>
-      </div>
+
+        <div class="grid-2" style="margin-top:12px;">
+          <div>
+            <label>Project Type</label>
+            <select name="Project Type" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Commercial Build-Out</option>
+              <option>Tenant Improvement</option>
+              <option>Spa / Salon Build-Out</option>
+              <option>Residential (Select Projects)</option>
+              <option>Restoration / Mitigation</option>
+            </select>
+          </div>
+          <div>
+            <label>Project Location</label>
+            <input name="Location" type="text" placeholder="City (ex: Overland Park)" required />
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <label>Estimated Timeline</label>
+          <input name="Timeline" type="text" placeholder="When do you want to start?" />
+        </div>
+
+        <div style="margin-top:12px;">
+          <label>Scope / Notes</label>
+          <textarea name="Scope" rows="6" placeholder="Tell us about your space, scope, and any deadlines."></textarea>
+        </div>
+
+        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn primary" type="submit">Send Request</button>
+          <a class="btn" href="projects.html">View Commercial Work</a>
+        </div>
+
+        <p class="small" style="margin-top:12px;">
+          Licensed &amp; Insured General Contractor • Greater Kansas City &amp; Johnson County, Kansas
+        </p>
+      </form>
     </div>
   </div>
 </main>
@@ -71,40 +103,14 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div>© <span id="year"></span> TK Remodeling & Roofing LLC</div>
-      <div class="small">Commercial Tenant Finishes · Kansas City</div>
+      <div>© <span id="year"></span> TK Remodeling</div>
+      <div>Greater Kansas City • Johnson County, Kansas</div>
     </div>
   </div>
 </footer>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
-
-  function sendEmail(e){
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const company = document.getElementById('company').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const type = document.getElementById('type').value;
-    const msg = document.getElementById('msg').value;
-
-    const subject = encodeURIComponent(`Bid Request — ${type || 'Project'}`);
-    const body = encodeURIComponent(
-`Name: ${name}
-Company: ${company}
-Email: ${email}
-Phone: ${phone}
-Project Type: ${type}
-
-Details:
-${msg}`
-    );
-
-    // Change this later to your real inbox:
-    window.location.href = `mailto:bids@tkremodel.com?subject=${subject}&body=${body}`;
-    return false;
-  }
 </script>
 
 </body>
