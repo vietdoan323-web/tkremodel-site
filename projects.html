@@ -1,77 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Projects | TK Remodeling</title>
-  <meta name="description" content="Selected commercial build-outs and tenant improvements across Greater Kansas City and Johnson County, Kansas."/>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Commercial Projects | TK Remodeling – Kansas City</title>
+<meta name="description" content="View commercial build-outs and tenant improvement projects by TK Remodeling. Serving Greater Kansas City and Johnson County, Kansas.">
+
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header class="topbar">
+<header class="site-header">
   <div class="container">
-    <div class="nav">
+    <nav class="navbar">
       <a class="brand" href="index.html">
-        <div class="mark">TK</div>
-        <div class="name">
+        <img src="logo-white.png" alt="TK Remodeling logo">
+        <div class="brand-text">
           <strong>TK Remodeling</strong>
           <span>Licensed & Insured General Contractor</span>
         </div>
       </a>
-      <nav class="links">
-        <a href="projects.html">Commercial</a>
+
+      <div class="nav-links">
+        <a href="projects.html" aria-current="page">Commercial</a>
         <a href="residential.html">Residential</a>
         <a href="restoration.html">Restoration</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="btn primary">Contact</a>
-      </nav>
-    </div>
+        <a class="cta" href="contact.html">Contact</a>
+      </div>
+    </nav>
   </div>
 </header>
 
 <main class="section">
   <div class="container">
-    <h2>Selected Commercial Projects</h2>
-    <p class="lead">
-      Serving Greater Kansas City and Johnson County, Kansas.
-      Built for projects that require coordination — not patchwork renovation.
-    </p>
-    <p class="small">
-      Commercial projects typically ranging from 2,000 to 10,000 square feet.
+
+    <h2>Commercial Projects</h2>
+    <p class="sub">
+      Structured tenant improvements and build-outs across Greater Kansas City and Johnson County.
     </p>
 
-    <div id="projectsGrid" class="proj-grid"></div>
+    <!-- PROJECT 1 -->
+    <div class="project">
+      <img src="project1.jpg" alt="Spa build-out project Kansas City">
 
-    <div class="spacer"></div>
+      <div class="project-info">
+        <h3>Luxury Nail Salon Build-Out</h3>
+        <p class="project-meta">Overland Park, KS • 4,500 SF</p>
 
-    <h2>Client Feedback</h2>
-    <p class="lead">A few words from commercial clients and partners.</p>
-    <div id="testimonialsGrid" class="tgrid"></div>
+        <p>
+          Full interior build-out including high-density plumbing layout for 16 pedicure stations,
+          ventilation coordination, electrical upgrades, inspection sequencing, and clean turnover.
+        </p>
 
-    <div class="spacer"></div>
-
-    <div class="cta">
-      <h3>Request a Project Consultation</h3>
-      <p class="lead">Share the address, timeline, and scope — we’ll follow up to discuss next steps.</p>
-      <a class="btn primary" href="contact.html">Contact</a>
+        <ul>
+          <li>Tenant improvement from shell space</li>
+          <li>Plumbing & electrical coordination</li>
+          <li>Passed inspections on first review</li>
+        </ul>
+      </div>
     </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project">
+      <img src="project2.jpg" alt="Medical office tenant improvement Kansas City">
+
+      <div class="project-info">
+        <h3>Medical Office Tenant Improvement</h3>
+        <p class="project-meta">Olathe, KS • 6,200 SF</p>
+
+        <p>
+          Interior reconfiguration, exam room build-out, MEP upgrades,
+          ADA compliance updates, and coordinated inspection management.
+        </p>
+
+        <ul>
+          <li>Phased construction schedule</li>
+          <li>Code compliance management</li>
+          <li>Inspection-ready documentation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project">
+      <img src="project3.jpg" alt="Retail tenant improvement Kansas City">
+
+      <div class="project-info">
+        <h3>Retail & Convenience Build-Out</h3>
+        <p class="project-meta">Lenexa, KS • 3,800 SF</p>
+
+        <p>
+          Full tenant improvement including interior framing, finish work,
+          lighting upgrades, plumbing, and coordinated city inspections.
+        </p>
+
+        <ul>
+          <li>Fast-track schedule</li>
+          <li>Trade coordination & sequencing</li>
+          <li>Clean certificate-of-occupancy turnover</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </main>
 
 <footer class="footer">
   <div class="container">
-    <div class="row">
-      <div>© <span id="year"></span> TK Remodeling</div>
-      <div class="small">Greater Kansas City • Johnson County, KS</div>
-    </div>
+    <small>© 2026 TK Remodeling. Commercial General Contractor – Kansas City.</small>
   </div>
 </footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-<script src="projects.js"></script>
 
 </body>
 </html>
