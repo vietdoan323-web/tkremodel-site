@@ -370,3 +370,54 @@ img{ max-width:100%; display:block; }
     grid-template-columns: 1fr;
   }
 }
+/* ===== PROJECTS PAGE ===== */
+
+.project {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.project img {
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  margin: 0 0 6px;
+}
+
+.project-meta {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.project-info ul {
+  margin-top: 12px;
+  padding-left: 18px;
+  color: var(--ink);
+}
+
+.project-info li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+}
