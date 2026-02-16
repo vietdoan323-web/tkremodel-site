@@ -1,194 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TK Remodeling | Licensed & Insured General Contractor | Kansas City</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TK Remodeling | Licensed & Insured General Contractor – Kansas City</title>
+<meta name="description" content="Licensed & Insured General Contractor serving Greater Kansas City and Johnson County, Kansas. Commercial build-outs, tenant improvements, spa and salon construction, and coordinated project execution.">
 
-  <meta name="description" content="Licensed & insured general contractor serving Greater Kansas City and Johnson County, Kansas. Commercial build-outs, tenant improvements, and coordinated construction delivery for office, medical, restaurant, retail, and spa/salon projects." />
+<style>
 
-  <!-- SEO keywords (kept reasonable, not spammy) -->
-  <meta name="keywords" content="Kansas City general contractor, Johnson County general contractor, tenant improvement contractor Kansas City, commercial general contractor Overland Park, commercial general contractor Olathe, commercial general contractor Leawood, commercial general contractor Lenexa, commercial general contractor Prairie Village, commercial general contractor Mission, commercial general contractor Merriam, nail salon build-out contractor Kansas City, spa build-out contractor Kansas City" />
+/* ===== GLOBAL ===== */
 
-  <link rel="canonical" href="https://tkremodel.com/" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
-<body>
+body{
+  background:#f5f7fa;
+  color:#111827;
+  line-height:1.6;
+}
 
-  <!-- NAV -->
-  <header class="navbar">
-    <div class="nav-inner">
-      <a class="brand" href="index.html" aria-label="TK Remodeling Home">
-        <div class="brand-badge">TK</div>
-        <div class="brand-title">
-          <strong>TK Remodeling</strong>
-          <span>Licensed &amp; Insured General Contractor</span>
-        </div>
-      </a>
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 24px;
+}
 
-      <nav class="nav-links" aria-label="Primary">
-        <a href="commercial.html">Commercial</a>
-        <a href="residential.html">Residential</a>
-        <a href="restoration.html">Restoration</a>
-        <a href="about.html">About</a>
-        <a class="nav-cta" href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+/* ===== HEADER ===== */
 
-  <!-- HERO -->
-  <main class="container">
-    <section class="hero">
-      <div class="cred-strip">Licensed • Insured • Commercial Focused</div>
+header{
+  background:#0b1220;
+  padding:18px 0;
+  color:white;
+}
 
-      <div class="hero-grid">
-        <!-- Left -->
-        <div>
-          <h1>Licensed &amp; Insured General Contractor</h1>
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 
-          <p class="lead">
-            Serving Greater Kansas City and Johnson County, Kansas.
-          </p>
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:white;
+}
 
-          <p class="subcopy">
-            Delivering commercial build-outs and tenant improvements with disciplined scheduling, coordinated trades, and inspection-ready execution —
-            built for projects that require coordination, not patchwork renovation.
-          </p>
+.logo-box{
+  background:linear-gradient(135deg,#0ea5e9,#22c55e);
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:700;
+  color:#0b1220;
+}
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="commercial.html">View Commercial Services</a>
-            <a class="btn btn-ghost" href="contact.html">Request a Consultation</a>
-          </div>
+.nav-links{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
 
-          <hr class="hr" />
+.nav-links a{
+  color:#d1d5db;
+  text-decoration:none;
+  font-weight:500;
+}
 
-          <p class="subcopy" style="margin-top:0;">
-            Typical commercial scopes: <strong>2,000–10,000 SF</strong> build-outs and tenant improvements across office, medical, restaurant, retail, convenience, and spa/salon environments.
-          </p>
-        </div>
+.nav-links a:hover{
+  color:white;
+}
 
-        <!-- Right -->
-        <aside class="hero-card" aria-label="What we do">
-          <h3>What we deliver</h3>
-          <div class="pills">
-            <div class="pill">
-              <strong>Tenant Improvements</strong>
-              <span>Build-outs, reconfiguration, finish + MEP coordination</span>
-            </div>
-            <div class="pill">
-              <strong>Inspection-Ready Work</strong>
-              <span>Code compliance, permitting coordination, punch closeout</span>
-            </div>
-            <div class="pill">
-              <strong>Spa &amp; Salon Build-Outs</strong>
-              <span>Plumbing density, ventilation, layout + inspection flow</span>
-            </div>
-            <div class="pill">
-              <strong>Restoration Path</strong>
-              <span>Mitigation + full reconstruction (link will expand later)</span>
-            </div>
-          </div>
+.contact-btn{
+  background:#0ea5e9;
+  padding:10px 18px;
+  border-radius:10px;
+  color:white !important;
+}
 
-          <hr class="hr" />
+/* ===== HERO ===== */
 
-          <ul class="list">
-            <li>Clear scope, clear schedule, clear communication</li>
-            <li>Coordinated trades + disciplined site management</li>
-            <li>Clean turnover with documented closeout</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <!-- INDUSTRIES -->
-    <section class="section">
-      <h2>Industries Served</h2>
-      <p>Spa &amp; Salon Build-Outs • Medical • Office • Restaurant • Retail • Convenience</p>
-
-      <div class="cards" role="list">
-        <div class="card" role="listitem">
-          <h3>Spa &amp; Salon Build-Outs</h3>
-          <p>High-density plumbing layouts, ventilation needs, and inspection coordination — built to pass and perform.</p>
-        </div>
-        <div class="card" role="listitem">
-          <h3>Medical &amp; Office</h3>
-          <p>Phased construction, code requirements, and tight schedules — with clean turnover and closeout.</p>
-        </div>
-        <div class="card" role="listitem">
-          <h3>Restaurant &amp; Retail</h3>
-          <p>Fast-moving projects that require trade coordination, punch discipline, and inspection readiness.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY -->
-    <section class="section">
-      <h2>Why Choose TK Remodeling</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Commercial Focus</h3>
-          <p>We concentrate on structured commercial work that requires coordination across trades, permitting, and inspections.</p>
-        </div>
-        <div class="card">
-          <h3>Process-Driven Execution</h3>
-          <p>From defined scope to final inspection, every project follows a disciplined schedule with active oversight and communication.</p>
-        </div>
-        <div class="card">
-          <h3>Clean Turnover</h3>
-          <p>Closeout isn’t an afterthought — we push punch, finalize inspections, and deliver a clean handoff you can operate from.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section">
-      <h2>Our Process</h2>
-      <p>Structured delivery from preconstruction through closeout — so owners, PMs, and inspectors stay aligned.</p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>1) Preconstruction</h3>
-          <p>Scope alignment, budget clarity, schedule planning, and permit/inspection coordination.</p>
-        </div>
-        <div class="card">
-          <h3>2) Build</h3>
-          <p>Disciplined site management, trade coordination, quality control, and proactive communication.</p>
-        </div>
-        <div class="card">
-          <h3>3) Closeout</h3>
-          <p>Punch completion, inspection support, final walkthrough, and clean turnover.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section">
-      <div class="hero-card">
-        <h2 style="margin-top:0;">Request a Consultation</h2>
-        <p style="margin-bottom:16px;">
-          If you’re planning a tenant improvement or commercial build-out in Kansas City or Johnson County, we’ll review scope, timeline, and next steps.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="contact.html">Contact Us</a>
-          <a class="btn btn-ghost" href="projects.html">View Projects</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container" style="padding:0;">
-        <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
-          <span>© <span id="y"></span> TK Remodeling. All rights reserved.</span>
-          <span>Greater Kansas City • Johnson County, KS • <a href="contact.html">contact@tkremodel.com</a></span>
-        </div>
-      </div>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+.hero{
+  background:linea
