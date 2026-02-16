@@ -1,116 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact | TK Remodeling</title>
-  <meta name="description" content="Request a project consultation with TK Remodeling. Licensed & Insured General Contractor serving Greater Kansas City and Johnson County, Kansas."/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | TK Remodeling — Kansas City General Contractor</title>
+  <meta name="description" content="Request a consultation with TK Remodeling — a licensed and insured general contractor serving Greater Kansas City and Johnson County, Kansas. Commercial build-outs and tenant improvements." />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
 
-<header class="topbar">
-  <div class="container">
-    <div class="nav">
-      <a class="brand" href="index.html">
-        <div class="mark">TK</div>
-        <div class="name">
-          <strong>TK Remodeling</strong>
-          <span>Licensed & Insured General Contractor</span>
+<body>
+  <!-- NAV (same as index/about) -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a class="brand" href="index.html">
+          <img src="logo-white.png" alt="TK Remodeling logo" />
+          <div class="brand-text">
+            <strong>TK Remodeling</strong>
+            <span>Licensed &amp; Insured General Contractor</span>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="projects.html">Commercial</a>
+          <a href="residential.html">Residential</a>
+          <a href="restoration.html">Restoration</a>
+          <a href="about.html">About</a>
+          <a class="cta" href="contact.html" aria-current="page">Contact</a>
         </div>
-      </a>
-      <nav class="links">
-        <a href="projects.html">Commercial</a>
-        <a href="residential.html">Residential</a>
-        <a href="restoration.html">Restoration</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="btn primary active">Contact</a>
       </nav>
     </div>
-  </div>
-</header>
+  </header>
 
-<main class="section">
-  <div class="container">
-    <h2>Request a Project Consultation</h2>
-    <p class="lead">
-      Provide your project details below and our team will follow up to discuss next steps.
-    </p>
+  <main class="section">
+    <div class="container">
+      <h2>Request a Consultation</h2>
+      <p class="sub">
+        Serving <strong>Greater Kansas City</strong> and <strong>Johnson County, Kansas</strong>. Commercial build-outs and tenant improvements with coordinated trades and inspection-ready closeout.
+      </p>
 
-    <div class="card" style="margin-top:14px;">
-      <form class="form" action="mailto:contact@tkremodel.com" method="post" enctype="text/plain">
-        <div class="grid-2">
-          <div>
-            <label>Full Name</label>
-            <input name="Name" type="text" placeholder="Your name" required />
-          </div>
-          <div>
-            <label>Phone</label>
-            <input name="Phone" type="tel" placeholder="(###) ###-####" required />
-          </div>
-          <div>
-            <label>Email</label>
-            <input name="Email" type="email" placeholder="you@email.com" required />
-          </div>
-          <div>
-            <label>Business / Organization</label>
-            <input name="Business" type="text" placeholder="Business name (optional)" />
-          </div>
+      <div class="grid-2">
+        <!-- LEFT: FORM -->
+        <div class="card">
+          <h3 style="margin-bottom:10px;">Project Details</h3>
+          <p style="margin-top:0;color:var(--muted);">
+            Fill this out and we’ll respond with next steps (site walk, scope questions, and scheduling).
+          </p>
+
+          <!-- NOTE: This form uses mailto so it "works" without a backend.
+               Later we can upgrade to Formspree / Netlify forms / Google Forms / Zapier. -->
+          <form class="form"
+                action="mailto:contact@tkremodel.com"
+                method="post"
+                enctype="text/plain">
+
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Name *</label>
+                <input id="name" name="Name" type="text" required placeholder="Your name" />
+              </div>
+
+              <div class="field">
+                <label for="company">Company</label>
+                <input id="company" name="Company" type="text" placeholder="Business name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="phone">Phone *</label>
+                <input id="phone" name="Phone" type="tel" required placeholder="(xxx) xxx-xxxx" />
+              </div>
+
+              <div class="field">
+                <label for="email">Email *</label>
+                <input id="email" name="Email" type="email" required placeholder="you@company.com" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="city">Project city *</label>
+                <input id="city" name="Project City" type="text" required placeholder="Overland Park, Olathe, KC, etc." />
+              </div>
+
+              <div class="field">
+                <label for="type">Project type *</label>
+                <select id="type" name="Project Type" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Commercial Build-Out / Tenant Improvement</option>
+                  <option>Spa / Nail Salon Build-Out</option>
+                  <option>Medical / Office Build-Out</option>
+                  <option>Restaurant / Retail / Convenience</option>
+                  <option>Residential (existing clients / referral)</option>
+                  <option>Restoration Path (mitigation + full reconstruction)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="size">Approx. size (SF)</label>
+                <input id="size" name="Approx Size SF" type="text" placeholder="2,000–10,000 SF typical" />
+              </div>
+
+              <div class="field">
+                <label for="timeline">Target timeline</label>
+                <input id="timeline" name="Target Timeline" type="text" placeholder="Desired start / completion" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="scope">Scope summary *</label>
+              <textarea id="scope" name="Scope Summary" required rows="6" placeholder="What are you building? Any demo, reconfiguration, MEP upgrades, permits, inspections, deadlines?"></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="ref">How did you hear about us?</label>
+                <input id="ref" name="Referral Source" type="text" placeholder="Property manager, referral, Google, etc." />
+              </div>
+
+              <div class="field">
+                <label for="files">Plans / photos link</label>
+                <input id="files" name="Plans Photos Link" type="text" placeholder="Google Drive / Dropbox link (optional)" />
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Request</button>
+
+            <p style="margin:12px 0 0;color:var(--muted);font-size:13px;">
+              By submitting, you agree we can contact you by phone/email about your project.
+            </p>
+          </form>
         </div>
 
-        <div class="grid-2" style="margin-top:12px;">
-          <div>
-            <label>Project Type</label>
-            <select name="Project Type" required>
-              <option value="" selected disabled>Select one</option>
-              <option>Commercial Build-Out</option>
-              <option>Tenant Improvement</option>
-              <option>Spa / Salon Build-Out</option>
-              <option>Residential (Select Projects)</option>
-              <option>Restoration / Mitigation</option>
-            </select>
+        <!-- RIGHT: QUALIFIER + CONTACT INFO -->
+        <div class="card">
+          <h3>What to Expect</h3>
+          <ul class="bullets" style="margin-top:10px;">
+            <li><strong>Fast response</strong> — we’ll confirm fit and scheduling.</li>
+            <li><strong>Site walk</strong> — assess existing conditions and constraints.</li>
+            <li><strong>Scope clarity</strong> — align on deliverables, permitting, and inspections.</li>
+            <li><strong>Execution plan</strong> — coordinated trades and disciplined timeline.</li>
+          </ul>
+
+          <div style="height:14px;"></div>
+
+          <h3>Best Fit Projects</h3>
+          <p style="margin-top:8px;color:var(--muted);">
+            Commercial build-outs and tenant improvements where coordination matters — especially
+            spa/nail salons, medical/office, restaurant/retail, and convenience environments.
+          </p>
+
+          <div style="height:14px;"></div>
+
+          <div class="card" style="background:rgba(255,255,255,.04); border-color:rgba(255,255,255,.06);">
+            <h3 style="margin-top:0;">Direct Contact</h3>
+            <p style="margin:8px 0 0;">
+              Email: <a href="mailto:contact@tkremodel.com">contact@tkremodel.com</a>
+            </p>
+            <p style="margin:6px 0 0;color:var(--muted);font-size:14px;">
+              Service Area: Greater Kansas City + Johnson County, Kansas
+            </p>
           </div>
-          <div>
-            <label>Project Location</label>
-            <input name="Location" type="text" placeholder="City (ex: Overland Park)" required />
-          </div>
-        </div>
 
-        <div style="margin-top:12px;">
-          <label>Estimated Timeline</label>
-          <input name="Timeline" type="text" placeholder="When do you want to start?" />
-        </div>
+          <div style="height:14px;"></div>
 
-        <div style="margin-top:12px;">
-          <label>Scope / Notes</label>
-          <textarea name="Scope" rows="6" placeholder="Tell us about your space, scope, and any deadlines."></textarea>
+          <p style="margin:0;color:var(--muted);font-size:13px;">
+            Note: The Restoration link currently points to a separate page later — we’ll connect it when ready.
+          </p>
         </div>
-
-        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
-          <button class="btn primary" type="submit">Send Request</button>
-          <a class="btn" href="projects.html">View Commercial Work</a>
-        </div>
-
-        <p class="small" style="margin-top:12px;">
-          Licensed &amp; Insured General Contractor • Greater Kansas City &amp; Johnson County, Kansas
-        </p>
-      </form>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div>© <span id="year"></span> TK Remodeling</div>
-      <div>Greater Kansas City • Johnson County, Kansas</div>
+  <footer class="footer">
+    <div class="container">
+      <small>© 2026 TK Remodeling. Licensed &amp; Insured General Contractor.</small>
     </div>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  </footer>
 </body>
 </html>
