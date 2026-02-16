@@ -107,6 +107,17 @@ a:hover{opacity:.92}
 
 /* HERO */
 .hero{
+  padding:70px 0 60px;
+  background:linear-gradient(180deg,#0f172a 0%, #1e293b 100%);
+  color:white;
+}
+.hero h1{
+  color:white;
+}
+.hero p{
+  color:#cbd5e1;
+}
+
   padding:22px 0 6px;
 }
 
