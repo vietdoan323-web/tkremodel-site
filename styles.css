@@ -112,6 +112,10 @@ a:hover{opacity:.92}
   color:white;
 }
 .hero h1{
+  font-weight:800;
+  letter-spacing:-1px;
+}
+{
   color:white;
 }
 .hero p{
