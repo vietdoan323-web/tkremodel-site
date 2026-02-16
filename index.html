@@ -1,241 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Kansas City General Contractor | TK Remodeling</title>
-<meta name="description" content="Licensed & Insured General Contractor serving Greater Kansas City and Johnson County, Kansas. Specializing in commercial build-outs, tenant improvements, and spa & salon construction.">
+  <title>Kansas City General Contractor | TK Remodeling</title>
+  <meta name="description" content="Licensed & Insured General Contractor serving Greater Kansas City and Johnson County, Kansas. Commercial build-outs, tenant improvements, spa & nail salon build-outs, and restoration mitigation with full reconstruction." />
 
-<style>
-
-/* ===== RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
-body {
-  background: #f4f6f9;
-  color: #111827;
-  line-height: 1.6;
-}
-
-/* ===== NAVIGATION ===== */
-header {
-  background: #111827;
-  padding: 16px 40px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 28px;
-  font-weight: 500;
-}
-
-.nav a:hover {
-  opacity: 0.8;
-}
-
-.logo img {
-  height: 40px;
-}
-
-/* ===== HERO ===== */
-.hero-wrapper {
-  padding: 60px 40px;
-}
-
-.hero {
-  max-width: 1200px;
-  margin: auto;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  border-radius: 20px;
-  padding: 80px;
-  display: flex;
-  gap: 60px;
-  color: white;
-}
-
-.hero-left {
-  flex: 1;
-}
-
-.badge {
-  display: inline-block;
-  background: rgba(255,255,255,0.1);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin-bottom: 24px;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  opacity: 0.9;
-  margin-bottom: 30px;
-}
-
-.button {
-  display: inline-block;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.button-primary {
-  background: #22c1c3;
-  color: #111827;
-}
-
-.button-primary:hover {
-  background: #1ca5a7;
-}
-
-.hero-right {
-  width: 380px;
-  background: #f8fafc;
-  color: #111827;
-  padding: 30px;
-  border-radius: 16px;
-}
-
-.hero-right h3 {
-  margin-bottom: 20px;
-}
-
-.hero-right strong {
-  display: block;
-  margin-top: 16px;
-}
-
-/* ===== INDUSTRIES ===== */
-.section {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 40px;
-}
-
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #1e293b;
-  color: white;
-  padding: 24px;
-  border-radius: 12px;
-}
-
-.card h4 {
-  margin-bottom: 10px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  padding: 40px;
-  background: #111827;
-  color: white;
-  margin-top: 80px;
-}
-
-</style>
+  <!-- ✅ THIS is where the stylesheet link goes -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a class="brand" href="index.html">
+          <!-- If your file is named exactly logo-white.png, this will work -->
+          <img src="logo-white.png" alt="TK Remodeling logo" />
+          <div class="brand-text">
+            <strong>TK Remodeling</strong>
+            <span>Licensed &amp; Insured General Contractor</span>
+          </div>
+        </a>
 
-<header>
-  <div class="nav">
-    <div class="logo">
-      <a href="index.html">
-        <img src="logo-white.png" alt="TK Remodeling Logo">
-      </a>
+        <div class="nav-links">
+          <a href="projects.html">Commercial</a>
+          <a href="residential.html">Residential</a>
+          <a href="restoration.html">Restoration</a>
+          <a href="about.html">About</a>
+          <a class="cta" href="contact.html">Contact</a>
+        </div>
+      </nav>
     </div>
-    <div>
-      <a href="index.html">Commercial</a>
-      <a href="residential.html">Residential</a>
-      <a href="restoration.html">Restoration</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero-wrap">
+    <div class="container">
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <div class="badge">Licensed • Insured • Commercial Focused</div>
+
+            <h1>Licensed &amp; Insured<br/>General Contractor</h1>
+
+            <p class="lede">
+              Serving Greater Kansas City and Johnson County, Kansas.
+            </p>
+
+            <p class="lede">
+              Delivering structured commercial build-outs and tenant improvements with disciplined scheduling and coordinated trades — built for projects that require coordination, not patchwork renovation.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="projects.html">View Commercial Projects</a>
+              <a class="btn btn-ghost" href="contact.html">Request a Consultation</a>
+            </div>
+
+            <p class="detail">
+              Typical commercial scopes: <strong>2,000–10,000 SF</strong> build-outs and tenant improvements across office, medical, restaurant, retail, convenience, and spa/salon environments.
+            </p>
+          </div>
+
+          <aside class="deliver-card">
+            <h3>What We Deliver</h3>
+
+            <ul class="deliver-list">
+              <li class="deliver-item">
+                <strong>Tenant Improvements</strong>
+                <span>Build-outs, reconfiguration, finish + MEP coordination</span>
+              </li>
+
+              <li class="deliver-item">
+                <strong>Inspection-Ready Work</strong>
+                <span>Code compliance, permitting coordination, punch closeout</span>
+              </li>
+
+              <li class="deliver-item">
+                <strong>Spa &amp; Salon Build-Outs</strong>
+                <span>Plumbing density, ventilation, layout + inspection flow</span>
+              </li>
+
+              <li class="deliver-item">
+                <strong>Restoration Path</strong>
+                <span>Mitigation + full reconstruction (link will expand later)</span>
+              </li>
+            </ul>
+
+            <ul class="deliver-bullets">
+              <li>Clear scope, clear schedule, clear communication</li>
+              <li>Coordinated trades + disciplined site management</li>
+              <li>Clean turnover with documented closeout</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
     </div>
-  </div>
-</header>
 
-<div class="hero-wrapper">
-  <div class="hero">
-    <div class="hero-left">
-      <div class="badge">Licensed • Insured • Commercial Focused</div>
-      <h1>Licensed & Insured<br>General Contractor</h1>
-      <p>
-        Serving Greater Kansas City and Johnson County, Kansas. 
-        Delivering structured commercial build-outs and tenant improvements with disciplined scheduling and coordinated trades.
-      </p>
-      <a href="projects.html" class="button button-primary">View Commercial Projects</a>
-    </div>
+    <!-- INDUSTRIES -->
+    <section class="section">
+      <div class="container">
+        <h2>Industries Served</h2>
+        <p class="sub">Spa &amp; Salon Build-Outs • Medical • Office • Restaurant • Retail • Convenience</p>
 
-    <div class="hero-right">
-      <h3>What We Deliver</h3>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Spa &amp; Salon Build-Outs</h3>
+            <p>High-density plumbing layouts, ventilation needs, and inspection coordination — built to pass and perform.</p>
+          </div>
 
-      <strong>Tenant Improvements</strong>
-      Build-outs, reconfiguration, finish + MEP coordination
+          <div class="card">
+            <h3>Medical &amp; Office</h3>
+            <p>Phased construction, code requirements, and tight schedules — with clean turnover and closeout.</p>
+          </div>
 
-      <strong>Inspection-Ready Work</strong>
-      Code compliance, permitting coordination, punch closeout
+          <div class="card">
+            <h3>Restaurant &amp; Retail</h3>
+            <p>Fast-moving projects that require trade coordination, punch discipline, and inspection readiness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <strong>Spa & Salon Build-Outs</strong>
-      Plumbing density, ventilation, layout + inspection flow
-
-      <strong>Restoration Path</strong>
-      Mitigation + full reconstruction
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <h2>Industries Served</h2>
-  <div class="grid">
-    <div class="card">
-      <h4>Spa & Salon Build-Outs</h4>
-      High-density plumbing layouts, ventilation systems, inspection coordination.
-    </div>
-    <div class="card">
-      <h4>Medical & Office</h4>
-      Code-driven construction with disciplined scheduling and clean turnover.
-    </div>
-    <div class="card">
-      <h4>Restaurant & Retail</h4>
-      Coordinated trades, inspection compliance, and structured project management.
-    </div>
-  </div>
-</div>
-
-<footer>
-  TK Remodeling | Licensed & Insured General Contractor | Kansas City & Johnson County
-</footer>
-
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <small>© 2026 TK Remodeling. Serving Greater Kansas City &amp; Johnson County, Kansas.</small>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
