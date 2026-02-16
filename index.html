@@ -3,175 +3,239 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TK Remodeling | Licensed & Insured General Contractor – Kansas City</title>
-<meta name="description" content="Licensed & Insured General Contractor serving Greater Kansas City and Johnson County, Kansas. Commercial tenant improvements and build-outs.">
 
-<link rel="stylesheet" href="styles.css">
+<title>Kansas City General Contractor | TK Remodeling</title>
+<meta name="description" content="Licensed & Insured General Contractor serving Greater Kansas City and Johnson County, Kansas. Specializing in commercial build-outs, tenant improvements, and spa & salon construction.">
 
 <style>
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 body {
-  margin:0;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background:#f4f6f8;
-  color:#111827;
+  background: #f4f6f9;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+header {
+  background: #111827;
+  padding: 16px 40px;
 }
 
 .nav {
-  background:#1f2937;
-  color:white;
-  padding:18px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav a {
-  color:white;
-  text-decoration:none;
-  margin-left:24px;
-  font-weight:500;
+  color: white;
+  text-decoration: none;
+  margin-left: 28px;
+  font-weight: 500;
 }
 
-.container {
-  max-width:1200px;
-  margin:auto;
-  padding:60px 24px;
+.nav a:hover {
+  opacity: 0.8;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* ===== HERO ===== */
+.hero-wrapper {
+  padding: 60px 40px;
 }
 
 .hero {
-  background:linear-gradient(135deg,#0f172a,#1e293b);
-  color:white;
-  padding:80px 60px;
-  border-radius:12px;
-  display:flex;
-  gap:60px;
+  max-width: 1200px;
+  margin: auto;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-radius: 20px;
+  padding: 80px;
+  display: flex;
+  gap: 60px;
+  color: white;
 }
 
 .hero-left {
-  flex:1;
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
 }
 
 .hero h1 {
-  font-size:48px;
-  margin:20px 0;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size:18px;
-  opacity:.9;
-  line-height:1.6;
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .button-primary {
-  display:inline-block;
-  margin-top:24px;
-  padding:14px 28px;
-  background:#0ea5e9;
-  color:white;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:600;
+  background: #22c1c3;
+  color: #111827;
+}
+
+.button-primary:hover {
+  background: #1ca5a7;
+}
+
+.hero-right {
+  width: 380px;
+  background: #f8fafc;
+  color: #111827;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.hero-right h3 {
+  margin-bottom: 20px;
+}
+
+.hero-right strong {
+  display: block;
+  margin-top: 16px;
+}
+
+/* ===== INDUSTRIES ===== */
+.section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  flex:1;
-  background:white;
-  color:#111827;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  background: #1e293b;
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
 }
 
-.section {
-  margin-top:80px;
+.card h4 {
+  margin-bottom: 10px;
 }
 
-.cards {
-  display:flex;
-  gap:30px;
-  margin-top:30px;
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #111827;
+  color: white;
+  margin-top: 80px;
 }
 
-.service-box {
-  background:#1f2937;
-  color:white;
-  padding:30px;
-  border-radius:12px;
-  flex:1;
-}
-
-.service-box h3 {
-  margin-bottom:10px;
-}
 </style>
-
 </head>
 
 <body>
 
-<div class="nav">
-  <div><strong>TK Remodeling</strong></div>
-  <div>
-    <a href="index.html">Commercial</a>
-    <a href="residential.html">Residential</a>
-    <a href="restoration.html">Restoration</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+<header>
+  <div class="nav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo-white.png" alt="TK Remodeling Logo">
+      </a>
+    </div>
+    <div>
+      <a href="index.html">Commercial</a>
+      <a href="residential.html">Residential</a>
+      <a href="restoration.html">Restoration</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </div>
-</div>
+</header>
 
-<div class="container">
+<div class="hero-wrapper">
+  <div class="hero">
+    <div class="hero-left">
+      <div class="badge">Licensed • Insured • Commercial Focused</div>
+      <h1>Licensed & Insured<br>General Contractor</h1>
+      <p>
+        Serving Greater Kansas City and Johnson County, Kansas. 
+        Delivering structured commercial build-outs and tenant improvements with disciplined scheduling and coordinated trades.
+      </p>
+      <a href="projects.html" class="button button-primary">View Commercial Projects</a>
+    </div>
 
-<div class="hero">
-  <div class="hero-left">
-    <div>Licensed • Insured • Commercial Focused</div>
-    <h1>Licensed & Insured General Contractor</h1>
-    <p>
-      Serving Greater Kansas City and Johnson County, Kansas.  
-      Delivering structured commercial build-outs and tenant improvements
-      with disciplined scheduling and coordinated trades.
-    </p>
-    <a href="projects.html" class="button-primary">View Commercial Projects</a>
-  </div>
+    <div class="hero-right">
+      <h3>What We Deliver</h3>
 
-  <div class="card">
-    <h3>What We Deliver</h3>
-    <p><strong>Tenant Improvements</strong><br>
-    Build-outs, reconfiguration, finish + MEP coordination</p>
+      <strong>Tenant Improvements</strong>
+      Build-outs, reconfiguration, finish + MEP coordination
 
-    <p><strong>Inspection-Ready Work</strong><br>
-    Code compliance, permitting coordination, punch closeout</p>
+      <strong>Inspection-Ready Work</strong>
+      Code compliance, permitting coordination, punch closeout
 
-    <p><strong>Spa & Salon Build-Outs</strong><br>
-    Plumbing density, ventilation, layout + inspection flow</p>
+      <strong>Spa & Salon Build-Outs</strong>
+      Plumbing density, ventilation, layout + inspection flow
 
-    <p><strong>Restoration Path</strong><br>
-    Mitigation + full reconstruction</p>
+      <strong>Restoration Path</strong>
+      Mitigation + full reconstruction
+    </div>
   </div>
 </div>
 
 <div class="section">
   <h2>Industries Served</h2>
-
-  <div class="cards">
-    <div class="service-box">
-      <h3>Spa & Salon Build-Outs</h3>
-      <p>High-density plumbing layouts and inspection coordination.</p>
+  <div class="grid">
+    <div class="card">
+      <h4>Spa & Salon Build-Outs</h4>
+      High-density plumbing layouts, ventilation systems, inspection coordination.
     </div>
-
-    <div class="service-box">
-      <h3>Medical & Office</h3>
-      <p>Phased construction with code compliance and disciplined scheduling.</p>
+    <div class="card">
+      <h4>Medical & Office</h4>
+      Code-driven construction with disciplined scheduling and clean turnover.
     </div>
-
-    <div class="service-box">
-      <h3>Restaurant & Retail</h3>
-      <p>Trade coordination and inspection-ready execution.</p>
+    <div class="card">
+      <h4>Restaurant & Retail</h4>
+      Coordinated trades, inspection compliance, and structured project management.
     </div>
   </div>
 </div>
 
-</div>
+<footer>
+  TK Remodeling | Licensed & Insured General Contractor | Kansas City & Johnson County
+</footer>
 
 </body>
 </html>
