@@ -521,3 +521,33 @@ img{ max-width:100%; display:block; }
   .slider-track img{ height: 260px; }
   .proj-head{ flex-direction: column; }
 }
+/* ===== Premium polish ===== */
+
+.section{
+  padding: 56px 0;
+}
+
+.section + .section{
+  border-top: 1px solid var(--line);
+}
+
+.card{
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 18px 45px rgba(2,10,26,.10);
+}
+
+h2{
+  letter-spacing: -0.02em;
+}
+
+.sub{
+  max-width: 80ch;
+}
+
+.grid-3{
+  gap: 18px;
+}
