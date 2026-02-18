@@ -162,8 +162,26 @@
       <small>© 2026 TK Remodeling. Serving the Kansas City metro.</small>
     </div>
   </footer>
+<script>
+  // Simple slider controls for any section with data-slider
+  document.querySelectorAll('[data-slider]').forEach((section) => {
+    const track = section.querySelector('[data-track]');
+    const prev = section.querySelector('[data-prev]');
+    const next = section.querySelector('[data-next]');
 
-  <script src="projects.js"></script>
+    if (!track || !prev || !next) return;
+
+    const scrollAmount = () => track.clientWidth;
+
+    prev.addEventListener('click', () => {
+      track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+    });
+
+    next.addEventListener('click', () => {
+      track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+    });
+  });
+</script>
 
 </body>
 </html>
