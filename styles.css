@@ -566,3 +566,60 @@ img{ max-width:100%; display:block; }
   .project{ flex-direction: column; }
   .project img{ width: 100%; height: auto; }
 }
+/* ===== Slider clarity + dots + counter (override) ===== */
+
+.slider{
+  background: #0b1220;        /* dark frame behind images */
+}
+
+.slider-track img{
+  height: 420px;              /* clearer / larger */
+  object-fit: contain;        /* IMPORTANT: shows whole image */
+  background: #0b1220;        /* avoids white bars looking weird */
+}
+
+@media (max-width: 720px){
+  .slider-track img{
+    height: 280px;
+  }
+}
+
+/* UI under slider */
+.slider-ui{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  padding: 10px 6px 0;
+}
+
+.slider-dots{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.slider-dot{
+  width: 26px;
+  height: 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(15,23,42,.18);
+  background: rgba(15,23,42,.08);
+  cursor:pointer;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+
+.slider-dot:hover{
+  transform: translateY(-1px);
+}
+
+.slider-dot.is-active{
+  background: rgba(24,182,255,.55);
+  border-color: rgba(24,182,255,.65);
+}
+
+.slider-count{
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(15,23,42,.65);
+}
