@@ -3,108 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residential Remodeling | TK Remodeling</title>
+  <meta name="description" content="Residential remodeling in Greater Kansas City and Johnson County, Kansas. Basements, bathrooms, kitchens — clean execution and disciplined coordination." />
 
-  <title>Residential Projects | TK Remodeling – Kansas City</title>
-  <meta name="description" content="Residential remodel projects by TK Remodeling. Serving the Kansas City metro with high-quality remodel execution and clean closeout." />
-
+  <!-- IMPORTANT: this must match your file name exactly -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Optional: Breadcrumb schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tkremodel.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Residential Projects", "item": "https://tkremodel.com/residential.html" }
-    ]
-  }
-  </script>
 </head>
 
-<main class="section">
-  <div class="container">
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Go to homepage">
+          <!-- If your logo file is different, update this path -->
+          <img src="logo-white.png" alt="TK Remodeling logo" />
+          <div class="brand-text">
+            <strong>TK Remodeling</strong>
+            <span>Licensed &amp; Insured General Contractor</span>
+          </div>
+        </a>
 
-    <h1>Residential Remodeling</h1>
-    <p class="sub">
-      Structured residential projects delivered with clean execution and disciplined coordination.
-    </p>
-
-    <!-- ================= BASEMENT ================= -->
-    <div class="proj">
-      <div class="proj-head">
-        <div>
-          <h3>Basement Remodel</h3>
-          <p class="proj-meta">Full lower-level build-out and finish</p>
+        <div class="nav-links">
+          <a href="projects.html">Commercial</a>
+          <a href="residential.html" aria-current="page">Residential</a>
+          <a href="restoration.html">Restoration</a>
+          <a href="about.html">About</a>
+          <a class="cta" href="contact.html">Contact</a>
         </div>
-      </div>
+      </nav>
+    </div>
+  </header>
 
-      <div class="slider">
-        <button class="slider-btn prev">&#10094;</button>
-        <div class="slider-track">
-          <img src="assets/projects/resi-basement-01.jpg" alt="Basement remodel 1">
-          <img src="assets/projects/resi-basement-02.jpg" alt="Basement remodel 2">
-          <img src="assets/projects/resi-basement-03.jpg" alt="Basement remodel 3">
-          <img src="assets/projects/resi-basement-04.jpg" alt="Basement remodel 4">
-          <img src="assets/projects/resi-basement-05.jpg" alt="Basement remodel 5">
-          <img src="assets/projects/resi-basement-06.jpg" alt="Basement remodel 6">
-          <img src="assets/projects/resi-basement-07.jpg" alt="Basement remodel 7">
+  <!-- HERO -->
+  <section class="hero-wrap">
+    <div class="container">
+      <div class="hero">
+        <div class="hero-inner">
+          <div>
+            <div class="badge">RESIDENTIAL REMODELING</div>
+            <h1>Residential Remodeling, Done Clean.</h1>
+            <p class="lede">
+              Structured residential projects delivered with disciplined coordination, clean job sites,
+              and inspection-ready finishes.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="contact.html">Request a Consultation</a>
+              <a class="btn btn-ghost" href="#work">View Residential Work</a>
+            </div>
+
+            <p class="detail">
+              Basements • Bathrooms • Kitchens — serving Greater Kansas City and Johnson County, Kansas.
+            </p>
+          </div>
+
+          <div class="deliver-card">
+            <h3>What We Deliver</h3>
+            <ul class="deliver-list">
+              <li class="deliver-item">
+                <strong>Basement Remodels</strong>
+                <span>Full build-out, framing, finishes, and layout coordination</span>
+              </li>
+              <li class="deliver-item">
+                <strong>Bathroom Remodels</strong>
+                <span>Tile, plumbing coordination, waterproofing, and finish upgrades</span>
+              </li>
+              <li class="deliver-item">
+                <strong>Kitchen Remodels</strong>
+                <span>Cabinetry, layout updates, appliances, and finish execution</span>
+              </li>
+            </ul>
+          </div>
+
         </div>
-        <button class="slider-btn next">&#10095;</button>
       </div>
     </div>
+  </section>
 
+  <!-- CONTENT -->
+  <main id="work" class="section">
+    <div class="container">
+      <h2>Residential Projects</h2>
+      <p class="sub">Three common scopes we deliver with clean execution and tight coordination.</p>
 
-    <!-- ================= BATHROOM ================= -->
-    <div class="proj">
-      <div class="proj-head">
-        <div>
-          <h3>Bathroom Remodel</h3>
-          <p class="proj-meta">Custom tile, plumbing rework, finish upgrades</p>
+      <!-- BASEMENT SLIDER -->
+      <section class="proj">
+        <div class="proj-head">
+          <div>
+            <h3>Basement Remodel</h3>
+            <p class="proj-meta">Full lower-level build-out and finish</p>
+          </div>
         </div>
-      </div>
 
-      <div class="slider">
-        <button class="slider-btn prev">&#10094;</button>
-        <div class="slider-track">
-          <img src="assets/projects/resi-bath-01.jpg" alt="Bathroom remodel 1">
-          <img src="assets/projects/resi-bath-02.jpg" alt="Bathroom remodel 2">
-          <img src="assets/projects/resi-bath-03.jpg" alt="Bathroom remodel 3">
+        <div class="slider" data-slider>
+          <button class="slider-btn prev" type="button" aria-label="Previous slide" data-prev>‹</button>
+
+          <div class="slider-track" data-track>
+            <!-- Make sure these files exist exactly in assets/projects/ -->
+            <img src="assets/projects/resi-basement-01.jpg" alt="Basement remodel 1">
+            <img src="assets/projects/resi-basement-02.jpg" alt="Basement remodel 2">
+            <img src="assets/projects/resi-basement-03.jpg" alt="Basement remodel 3">
+            <img src="assets/projects/resi-basement-04.jpg" alt="Basement remodel 4">
+            <img src="assets/projects/resi-basement-05.jpg" alt="Basement remodel 5">
+            <img src="assets/projects/resi-basement-06.jpg" alt="Basement remodel 6">
+            <img src="assets/projects/resi-basement-07.jpg" alt="Basement remodel 7">
+          </div>
+
+          <button class="slider-btn next" type="button" aria-label="Next slide" data-next>›</button>
         </div>
-        <button class="slider-btn next">&#10095;</button>
-      </div>
+      </section>
+
+      <!-- BATHROOM SLIDER -->
+      <section class="proj">
+        <div class="proj-head">
+          <div>
+            <h3>Bathroom Remodel</h3>
+            <p class="proj-meta">Custom tile, plumbing coordination, finish upgrades</p>
+          </div>
+        </div>
+
+        <div class="slider" data-slider>
+          <button class="slider-btn prev" type="button" aria-label="Previous slide" data-prev>‹</button>
+
+          <div class="slider-track" data-track>
+            <img src="assets/projects/resi-bath-01.jpg" alt="Bathroom remodel 1">
+            <img src="assets/projects/resi-bath-02.jpg" alt="Bathroom remodel 2">
+            <img src="assets/projects/resi-bath-03.jpg" alt="Bathroom remodel 3">
+          </div>
+
+          <button class="slider-btn next" type="button" aria-label="Next slide" data-next>›</button>
+        </div>
+      </section>
+
+      <!-- KITCHEN SLIDER -->
+      <section class="proj">
+        <div class="proj-head">
+          <div>
+            <h3>Kitchen Remodel</h3>
+            <p class="proj-meta">Cabinetry, layout redesign, appliance integration</p>
+          </div>
+        </div>
+
+        <div class="slider" data-slider>
+          <button class="slider-btn prev" type="button" aria-label="Previous slide" data-prev>‹</button>
+
+          <div class="slider-track" data-track>
+            <img src="assets/projects/resi-kitchen-01.jpg" alt="Kitchen remodel 1">
+            <img src="assets/projects/resi-kitchen-02.jpg" alt="Kitchen remodel 2">
+            <img src="assets/projects/resi-kitchen-03.jpg" alt="Kitchen remodel 3">
+            <img src="assets/projects/resi-kitchen-04.jpg" alt="Kitchen remodel 4">
+            <img src="assets/projects/resi-kitchen-05.jpg" alt="Kitchen remodel 5">
+            <img src="assets/projects/resi-kitchen-06.jpg" alt="Kitchen remodel 6">
+            <img src="assets/projects/resi-kitchen-07.jpg" alt="Kitchen remodel 7">
+            <img src="assets/projects/resi-kitchen-08.jpg" alt="Kitchen remodel 8">
+            <img src="assets/projects/resi-kitchen-09.jpg" alt="Kitchen remodel 9">
+            <img src="assets/projects/resi-kitchen-10.jpg" alt="Kitchen remodel 10">
+          </div>
+
+          <button class="slider-btn next" type="button" aria-label="Next slide" data-next>›</button>
+        </div>
+      </section>
+
     </div>
-
-
-    <!-- ================= KITCHEN ================= -->
-    <div class="proj">
-      <div class="proj-head">
-        <div>
-          <h3>Kitchen Remodel</h3>
-          <p class="proj-meta">Cabinetry, layout redesign, appliance integration</p>
-        </div>
-      </div>
-
-      <div class="slider">
-        <button class="slider-btn prev">&#10094;</button>
-        <div class="slider-track">
-          <img src="assets/projects/resi-kitchen-01.jpg" alt="Kitchen remodel 1">
-          <img src="assets/projects/resi-kitchen-02.jpg" alt="Kitchen remodel 2">
-          <img src="assets/projects/resi-kitchen-03.jpg" alt="Kitchen remodel 3">
-          <img src="assets/projects/resi-kitchen-04.jpg" alt="Kitchen remodel 4">
-          <img src="assets/projects/resi-kitchen-05.jpg" alt="Kitchen remodel 5">
-          <img src="assets/projects/resi-kitchen-06.jpg" alt="Kitchen remodel 6">
-          <img src="assets/projects/resi-kitchen-07.jpg" alt="Kitchen remodel 7">
-          <img src="assets/projects/resi-kitchen-08.jpg" alt="Kitchen remodel 8">
-          <img src="assets/projects/resi-kitchen-09.jpg" alt="Kitchen remodel 9">
-          <img src="assets/projects/resi-kitchen-10.jpg" alt="Kitchen remodel 10">
-        </div>
-        <button class="slider-btn next">&#10095;</button>
-      </div>
-    </div>
-
-  </div>
-</main>
+  </main>
 
   <footer class="footer">
     <div class="container">
@@ -112,6 +174,23 @@
     </div>
   </footer>
 
-  <script src="projects.js"></script>
+  <!-- Slider JS (built-in, no other files needed) -->
+  <script>
+    document.querySelectorAll('[data-slider]').forEach((slider) => {
+      const track = slider.querySelector('[data-track]');
+      const prev = slider.querySelector('[data-prev]');
+      const next = slider.querySelector('[data-next]');
+
+      const scrollAmount = () => track.clientWidth; // one full image width
+
+      prev.addEventListener('click', () => {
+        track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+      });
+
+      next.addEventListener('click', () => {
+        track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
