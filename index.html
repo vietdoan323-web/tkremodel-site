@@ -38,7 +38,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(13,27,42,0.97);backdrop-fi
 @keyframes fi{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 
 .wm{position:relative;overflow:hidden;cursor:zoom-in;}
-.wm::after{content:'';position:absolute;bottom:10px;right:10px;width:72px;height:36px;background-image:url('assets/TK_LOGO_VECTOR-01.jpg');background-size:contain;background-repeat:no-repeat;background-position:center;opacity:0.55;filter:invert(1) brightness(2);pointer-events:none;z-index:3;}
+.wm::after{content:'';position:absolute;bottom:10px;right:10px;width:72px;height:36px;background-image:url('TK_LOGO_VECTOR-01.jpg');background-size:contain;background-repeat:no-repeat;background-position:center;opacity:0.55;filter:invert(1) brightness(2);pointer-events:none;z-index:3;}
 .wm img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease;}
 .wm:hover img{transform:scale(1.05);}
 .wm .cap{position:absolute;bottom:0;left:0;right:0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(10,20,35,0.88));font-size:0.71rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;color:var(--offwhite);opacity:0;transition:opacity .3s;z-index:2;}
@@ -227,7 +227,7 @@ footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding
 
 <nav>
   <div class="nav-inner">
-    <div class="logo" onclick="showPage('home')"><img src="assets/TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
+    <div class="logo" onclick="showPage('home')"><img src="TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
     <div class="nav-links">
       <button onclick="showPage('home')" id="nav-home" class="active">Home</button>
       <button onclick="showPage('commercial')" id="nav-commercial">Commercial</button>
@@ -257,7 +257,7 @@ footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding
   <div class="hero">
     <div class="hbg"></div><div class="hgrid"></div><div class="haccent"></div>
     <div class="hcon">
-      <div class="hlogo"><img src="assets/TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
+      <div class="hlogo"><img src="TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
       <div class="hey">Kansas City General Contractor</div>
       <h1>Built For<em>Business.</em></h1>
       <p class="hsub">Commercial build-outs, tenant improvements, and water restoration across Greater Kansas City and Johnson County. Owner-operated, licensed, insured — priced without the corporate overhead.</p>
@@ -283,14 +283,14 @@ footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding
   </div>
 
   <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:4px;height:360px;">
-    <div class="wm" style="height:360px;" onclick="openLB(this)"><img src="assets/projects/IMG_1072.jpg" alt="Nail salon build-out"><div class="cap">Spa &amp; Salon Build-Out</div></div>
+    <div class="wm" style="height:360px;" onclick="openLB(this)"><img src="IMG_1072.jpg" alt="Nail salon build-out"><div class="cap">Spa &amp; Salon Build-Out</div></div>
     <div style="display:grid;grid-template-rows:1fr 1fr;gap:4px;">
-      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="assets/projects/resi-kitchen-04.jpg" alt="Kitchen remodel" style="height:178px;"><div class="cap">Kitchen Remodel</div></div>
-      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="assets/projects/IMG_8051.JPG" alt="Retail build-out" style="height:178px;"><div class="cap">Retail Tenant Finish</div></div>
+      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="resi-kitchen-04.jpg" alt="Kitchen remodel" style="height:178px;"><div class="cap">Kitchen Remodel</div></div>
+      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="IMG_8051.JPG" alt="Retail build-out" style="height:178px;"><div class="cap">Retail Tenant Finish</div></div>
     </div>
     <div style="display:grid;grid-template-rows:1fr 1fr;gap:4px;">
-      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-07.jpg" alt="Finished basement" style="height:178px;"><div class="cap">Basement Finish</div></div>
-      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="assets/projects/resi-bath-02.jpg" alt="Bathroom remodel" style="height:178px;"><div class="cap">Bathroom Remodel</div></div>
+      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="resi-basement-07.jpg" alt="Finished basement" style="height:178px;"><div class="cap">Basement Finish</div></div>
+      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="resi-bath-02.jpg" alt="Bathroom remodel" style="height:178px;"><div class="cap">Bathroom Remodel</div></div>
     </div>
   </div>
 
@@ -360,29 +360,29 @@ footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding
     </div>
     <div class="ph"><div class="pn">01</div><div><div class="pt">Spa &amp; Salon Build-Outs</div><div class="pd">Specialized nail salon and spa construction — plumbing, ventilation, health-code compliance, and luxury finishes.</div></div></div>
     <div class="g2" style="margin-bottom:5px;">
-      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/IMG_1072.jpg" alt="Nail salon"><div class="cap">Pedicure Station Row</div></div>
-      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/IMG_6615.jpg" alt="Nail salon reception"><div class="cap">Reception &amp; Polish Wall</div></div>
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="IMG_1072.jpg" alt="Nail salon"><div class="cap">Pedicure Station Row</div></div>
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="IMG_6615.jpg" alt="Nail salon reception"><div class="cap">Reception &amp; Polish Wall</div></div>
     </div>
     <div class="g2" style="margin-bottom:48px;">
-      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="assets/projects/IMG_9790.jpg" alt="Nail salon"><div class="cap">Nail Station Build-Out</div></div>
-      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="assets/projects/IMG_9765.jpg" alt="Nail salon"><div class="cap">Salon Interior Finish</div></div>
+      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="IMG_9790.jpg" alt="Nail salon"><div class="cap">Nail Station Build-Out</div></div>
+      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="IMG_9765.jpg" alt="Nail salon"><div class="cap">Salon Interior Finish</div></div>
     </div>
     <div class="ph"><div class="pn">02</div><div><div class="pt">Fitness &amp; Specialty Studios</div><div class="pd">HotWorx Overland Park — full studio build-out including sauna pod coordination, LVP flooring, and custom millwork.</div></div></div>
     <div class="g2" style="margin-bottom:48px;">
-      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/CA0DBE97-E153-4FAE-B966-FA099CD2FD1E.JPG" alt="HotWorx lobby"><div class="cap">HotWorx — Lobby &amp; Reception</div></div>
-      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/com-01.JPG" alt="HotWorx sauna pods"><div class="cap">HotWorx — Sauna Pod Corridor</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="CA0DBE97-E153-4FAE-B966-FA099CD2FD1E.JPG" alt="HotWorx lobby"><div class="cap">HotWorx — Lobby &amp; Reception</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="com-01.JPG" alt="HotWorx sauna pods"><div class="cap">HotWorx — Sauna Pod Corridor</div></div>
     </div>
     <div class="ph"><div class="pn">03</div><div><div class="pt">Restaurant &amp; Retail</div><div class="pd">Polished concrete, ACT ceilings, custom feature walls, and full interior finish coordination.</div></div></div>
     <div class="g2" style="margin-bottom:48px;">
-      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="assets/projects/C6C09501-5662-4B5D-A282-48D0D27EBBA8.JPG" alt="Restaurant"><div class="cap">Restaurant Tenant Finish</div></div>
-      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="assets/projects/IMG_9478.jpg" alt="Restaurant"><div class="cap">Fast Casual Restaurant Build-Out</div></div>
+      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="C6C09501-5662-4B5D-A282-48D0D27EBBA8.JPG" alt="Restaurant"><div class="cap">Restaurant Tenant Finish</div></div>
+      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="IMG_9478.jpg" alt="Restaurant"><div class="cap">Fast Casual Restaurant Build-Out</div></div>
     </div>
     <div class="ph"><div class="pn">04</div><div><div class="pt">Behind the Build</div><div class="pd">From rough framing and MEP coordination to slab prep — the foundation of every great finish.</div></div></div>
     <div class="g4" style="margin-bottom:52px;">
-      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="assets/projects/IMG_8011.jpg" alt="Framing"><div class="cap">Metal Framing</div></div>
-      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="assets/projects/IMG_8110.jpg" alt="MEP"><div class="cap">MEP Coordination</div></div>
-      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="assets/projects/IMG_5195.jpg" alt="Slab"><div class="cap">Slab &amp; Radiant Floor</div></div>
-      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="assets/projects/IMG_7246.jpg" alt="Plumbing"><div class="cap">Plumbing Rough-In</div></div>
+      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="IMG_8011.jpg" alt="Framing"><div class="cap">Metal Framing</div></div>
+      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="IMG_8110.jpg" alt="MEP"><div class="cap">MEP Coordination</div></div>
+      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="IMG_5195.jpg" alt="Slab"><div class="cap">Slab &amp; Radiant Floor</div></div>
+      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="IMG_7246.jpg" alt="Plumbing"><div class="cap">Plumbing Rough-In</div></div>
     </div>
     <div class="lbl">Where We've Worked</div><h2>Project Locations</h2>
     <div class="lgrid" style="margin-bottom:52px;">
@@ -422,37 +422,37 @@ footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding
   <div class="sec">
     <div class="ph"><div class="pn">01</div><div><div class="pt">Kitchen Remodels</div><div class="pd">Custom cabinetry, stone countertops, tile backsplash, lighting, electrical &amp; plumbing coordination.</div></div></div>
     <div class="gfeat" style="margin-bottom:5px;">
-      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/resi-kitchen-04.jpg" alt="Kitchen"><div class="cap">White Shaker — Quartz Island</div></div>
-      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/IMG_9941.JPG" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
-      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/resi-kitchen-01.jpg" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="resi-kitchen-04.jpg" alt="Kitchen"><div class="cap">White Shaker — Quartz Island</div></div>
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="IMG_9941.JPG" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="resi-kitchen-01.jpg" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
     </div>
     <div class="g2" style="margin-bottom:52px;">
-      <div class="wm" style="height:240px;" onclick="openLB(this)"><img src="assets/projects/IMG_9774.JPG" alt="Kitchen"><div class="cap">Large Kitchen Renovation</div></div>
-      <div class="wm" style="height:240px;" onclick="openLB(this)"><img src="assets/projects/resi-kitchen-07.jpg" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
+      <div class="wm" style="height:240px;" onclick="openLB(this)"><img src="IMG_9774.JPG" alt="Kitchen"><div class="cap">Large Kitchen Renovation</div></div>
+      <div class="wm" style="height:240px;" onclick="openLB(this)"><img src="resi-kitchen-07.jpg" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
     </div>
     <div class="ph"><div class="pn">02</div><div><div class="pt">Basement Finishing</div><div class="pd">Custom bars, flooring, recessed lighting, and full permit coordination.</div></div></div>
     <div class="g2" style="margin-bottom:5px;">
-      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-07.jpg" alt="Basement"><div class="cap">Stone Bar — Finished Basement</div></div>
-      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-04.jpg" alt="Basement"><div class="cap">LVP Floor &amp; Bar</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="resi-basement-07.jpg" alt="Basement"><div class="cap">Stone Bar — Finished Basement</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="resi-basement-04.jpg" alt="Basement"><div class="cap">LVP Floor &amp; Bar</div></div>
     </div>
     <div class="g2" style="margin-bottom:52px;">
-      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-05.jpg" alt="Basement"><div class="cap">Wet Bar &amp; Carpet Finish</div></div>
-      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-06.jpg" alt="Basement"><div class="cap">Open Basement — Tile Floor</div></div>
+      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="resi-basement-05.jpg" alt="Basement"><div class="cap">Wet Bar &amp; Carpet Finish</div></div>
+      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="resi-basement-06.jpg" alt="Basement"><div class="cap">Open Basement — Tile Floor</div></div>
     </div>
     <div class="ph"><div class="pn">03</div><div><div class="pt">Deck Construction</div><div class="pd">Permitted deck builds — single-family and multi-unit, elevated structures, railing systems, concrete footings.</div></div></div>
     <div class="g2" style="margin-bottom:52px;">
-      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="assets/projects/IMG_7820.JPG" alt="Deck"><div class="cap">Elevated Deck — Treated Lumber</div></div>
-      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="assets/projects/resi-deck-03.jpg" alt="Deck"><div class="cap">Deck &amp; Covered Patio</div></div>
+      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="IMG_7820.JPG" alt="Deck"><div class="cap">Elevated Deck — Treated Lumber</div></div>
+      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="resi-deck-03.jpg" alt="Deck"><div class="cap">Deck &amp; Covered Patio</div></div>
     </div>
     <div class="ph"><div class="pn">04</div><div><div class="pt">Bathroom Remodels</div><div class="pd">Luxury tile, custom tub surrounds, walk-in showers, vanities, and full plumbing coordination.</div></div></div>
     <div class="g2" style="margin-bottom:52px;">
-      <div class="wm" style="height:340px;" onclick="openLB(this)"><img src="assets/projects/resi-bath-01.jpg" alt="Bathroom"><div class="cap">Calacatta Marble Tub Surround</div></div>
-      <div class="wm" style="height:340px;" onclick="openLB(this)"><img src="assets/projects/resi-bath-02.jpg" alt="Bathroom"><div class="cap">Walk-In Shower — Marble Slab</div></div>
+      <div class="wm" style="height:340px;" onclick="openLB(this)"><img src="resi-bath-01.jpg" alt="Bathroom"><div class="cap">Calacatta Marble Tub Surround</div></div>
+      <div class="wm" style="height:340px;" onclick="openLB(this)"><img src="resi-bath-02.jpg" alt="Bathroom"><div class="cap">Walk-In Shower — Marble Slab</div></div>
     </div>
     <div class="ph"><div class="pn">05</div><div><div class="pt">Specialty &amp; Custom Work</div><div class="pd">Custom built-ins, fireplace surrounds, accent tile walls, and one-of-a-kind features.</div></div></div>
     <div class="g2">
-      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/IMG_4836.JPG" alt="Fireplace"><div class="cap">Tile Fireplace Surround</div></div>
-      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/IMG_6453.JPG" alt="Bunk room"><div class="cap">Custom Built-In Bunk Room</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="IMG_4836.JPG" alt="Fireplace"><div class="cap">Tile Fireplace Surround</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="IMG_6453.JPG" alt="Bunk room"><div class="cap">Custom Built-In Bunk Room</div></div>
     </div>
   </div>
   <div class="sec seca" style="text-align:center;">
@@ -512,7 +512,7 @@ footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding
         </div>
       </div>
       <div class="wm" style="height:440px;" onclick="openLB(this)">
-        <img src="assets/projects/IMG_1072.jpg" alt="TK Remodeling project">
+        <img src="IMG_1072.jpg" alt="TK Remodeling project">
       </div>
     </div>
   </div>
@@ -593,7 +593,7 @@ footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding
 <footer>
   <div class="fgrid">
     <div>
-      <div class="flogo"><img src="assets/TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
+      <div class="flogo"><img src="TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
       <p class="ftag">Licensed &amp; Insured General Contractor — Greater Kansas City &amp; Johnson County. Owner-operated. Competitively priced. Repeat-client focused.</p>
       <div class="fphone"><a href="tel:9139955000">(913) 995-5000</a></div>
       <div class="femail"><a href="mailto:contact@tkremodel.com">contact@tkremodel.com</a></div>
