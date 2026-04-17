@@ -1,365 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "name": "TK Remodeling",
-  "url": "https://tkremodel.com",
-  "logo": "https://tkremodel.com/logo-white.png",
-  "description": "Licensed and insured general contractor serving Greater Kansas City and Johnson County, Kansas. Specializing in commercial build-outs, tenant improvements, spa and nail salon construction.",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Kansas City"
-    },
-    {
-      "@type": "City",
-      "name": "Overland Park"
-    },
-    {
-      "@type": "City",
-      "name": "Olathe"
-    },
-    {
-      "@type": "City",
-      "name": "Leawood"
-    },
-    {
-      "@type": "City",
-      "name": "Lenexa"
-    },
-    {
-      "@type": "City",
-      "name": "Prairie Village"
-    },
-    {
-      "@type": "City",
-      "name": "Mission"
-    },
-    {
-      "@type": "City",
-      "name": "Merriam"
-    }
-  ],
-  "serviceOffered": [
-    {
-      "@type": "Service",
-      "name": "Commercial Build-Outs"
-    },
-    {
-      "@type": "Service",
-      "name": "Tenant Improvements"
-    },
-    {
-      "@type": "Service",
-      "name": "Spa and Nail Salon Build-Outs"
-    },
-    {
-      "@type": "Service",
-      "name": "Medical Office Construction"
-    }
-  ]
-}
-</script>
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TK Remodeling | Kansas City General Contractor — (913) 995-5000</title>
+<meta name="description" content="Licensed & Insured General Contractor serving Greater Kansas City and Johnson County, KS. Commercial build-outs, spa & salon specialist, water restoration, and residential remodeling. Owner-operated. (913) 995-5000.">
+<meta name="keywords" content="general contractor Kansas City, tenant finish Overland Park, nail salon build-out, commercial remodeling Olathe, water restoration Kansas City, TK Remodeling">
+<link rel="canonical" href="https://tkremodel.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--navy:#0d1b2a;--navy2:#162235;--navy3:#1e2f45;--steel:#2a4060;--gold:#c8922a;--gold2:#e8aa40;--offwhite:#f5f3ee;--muted:#8fa3b8;--text:#e8edf2;--r:4px;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--navy);color:var(--text);overflow-x:hidden;}
 
-  <title>Kansas City General Contractor | Commercial Tenant Improvements | TK Remodeling</title>
-  <meta name="description" content="Licensed & insured Kansas City general contractor specializing in commercial build-outs, tenant improvements, and spa & nail salon construction across Johnson County, KS.">
+nav{position:sticky;top:0;z-index:200;background:rgba(13,27,42,0.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(200,146,42,0.2);padding:0 5%;}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;}
+.logo{cursor:pointer;display:flex;align-items:center;}
+.logo img{height:42px;filter:invert(1) brightness(2);}
+.nav-links{display:flex;gap:2px;}
+.nav-links button{background:none;border:none;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:7px 13px;cursor:pointer;border-radius:var(--r);transition:all .2s;}
+.nav-links button:hover,.nav-links button.active{color:var(--gold);background:rgba(200,146,42,0.08);}
+.nav-phone{display:flex;align-items:center;gap:8px;color:var(--offwhite);font-size:0.95rem;font-weight:500;letter-spacing:0.02em;text-decoration:none;margin-right:12px;}
+.nav-phone-dot{width:7px;height:7px;background:var(--gold);border-radius:50%;flex-shrink:0;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+.nav-cta{background:var(--gold);color:var(--navy);font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:8px 18px;border:none;cursor:pointer;border-radius:var(--r);}
+.nav-cta:hover{background:var(--gold2);}
 
-  <!-- ✅ THIS is where the stylesheet link goes -->
-  <link rel="stylesheet" href="styles.css" />
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "name": "TK Remodeling",
-  "url": "https://tkremodel.com",
-  "logo": "https://tkremodel.com/logo-white.png",
-  "description": "Licensed and insured general contractor serving Greater Kansas City and Johnson County, Kansas. Specializing in commercial build-outs, tenant improvements, and spa & nail salon construction.",
-  "areaServed": [
-    { "@type": "City", "name": "Kansas City" },
-    { "@type": "City", "name": "Overland Park" },
-    { "@type": "City", "name": "Olathe" },
-    { "@type": "City", "name": "Leawood" },
-    { "@type": "City", "name": "Lenexa" },
-    { "@type": "City", "name": "Prairie Village" },
-    { "@type": "City", "name": "Mission" },
-    { "@type": "City", "name": "Merriam" }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What areas do you serve?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "TK Remodeling serves Greater Kansas City and Johnson County, Kansas, including Overland Park, Olathe, Leawood, Lenexa, Prairie Village, Mission, and Merriam."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What types of commercial projects do you specialize in?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We specialize in commercial build-outs and tenant improvements, including office, medical, restaurant, retail, convenience, and spa/nail salon environments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What project sizes are a good fit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typical commercial scopes are 2,000–10,000 square feet, depending on the space and the scope of work."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you handle permitting and inspections?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We coordinate code compliance and inspections as part of an inspection-ready delivery process, aligned with the project scope and jurisdiction requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you build a spa or nail salon build-out?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Spa and nail salon build-outs are a core environment we understand, including high-density plumbing needs, ventilation coordination, layout execution, and inspection flow."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do we get started?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Send your project city, approximate square footage, target timeline, and any plans or photos. We’ll respond with next steps for a consultation and site walk."
-      }
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "TK Remodeling",
-  "url": "https://tkremodel.com",
-  "logo": "https://tkremodel.com/logo-white.png",
-  "email": "contact@tkremodel.com",
-  "sameAs": []
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Home",
-    "item": "https://tkremodel.com/"
-  }]
-}
-</script>
+.lstrip{background:rgba(200,146,42,0.07);border-bottom:1px solid rgba(200,146,42,0.14);padding:8px 5%;display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;}
+.li{display:flex;align-items:center;gap:6px;font-size:0.69rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);}
+.ld{width:5px;height:5px;background:var(--gold);border-radius:50%;}
+.ls{width:1px;height:13px;background:rgba(200,146,42,0.22);}
+.lstrip-phone{font-size:0.75rem;font-weight:700;letter-spacing:0.06em;color:var(--gold2);}
 
+.page{display:none;animation:fi .3s ease;}
+.page.active{display:block;}
+@keyframes fi{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+
+.wm{position:relative;overflow:hidden;cursor:zoom-in;}
+.wm::after{content:'';position:absolute;bottom:10px;right:10px;width:72px;height:36px;background-image:url('assets/TK_LOGO_VECTOR-01.jpg');background-size:contain;background-repeat:no-repeat;background-position:center;opacity:0.55;filter:invert(1) brightness(2);pointer-events:none;z-index:3;}
+.wm img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease;}
+.wm:hover img{transform:scale(1.05);}
+.wm .cap{position:absolute;bottom:0;left:0;right:0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(10,20,35,0.88));font-size:0.71rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;color:var(--offwhite);opacity:0;transition:opacity .3s;z-index:2;}
+.wm:hover .cap{opacity:1;}
+
+#lb{display:none;position:fixed;inset:0;z-index:999;background:rgba(5,12,22,0.95);align-items:center;justify-content:center;cursor:zoom-out;}
+#lb.open{display:flex;}
+#lb img{max-width:92vw;max-height:90vh;object-fit:contain;border:1px solid rgba(200,146,42,0.2);}
+#lb-close{position:fixed;top:20px;right:28px;font-size:2rem;color:var(--muted);cursor:pointer;line-height:1;z-index:1000;}
+
+.hero{min-height:90vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6% 5%;}
+.hbg{position:absolute;inset:0;background:linear-gradient(135deg,#0d1b2a 0%,#162235 60%,#1a2d44 100%);}
+.hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(200,146,42,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(200,146,42,0.035) 1px,transparent 1px);background-size:60px 60px;}
+.haccent{position:absolute;right:-8%;top:8%;width:52%;height:88%;background:linear-gradient(135deg,rgba(22,34,53,0.85),rgba(42,64,96,0.3));border-left:2px solid rgba(200,146,42,0.12);clip-path:polygon(8% 0,100% 0,100% 100%,0% 100%);}
+.hcon{position:relative;z-index:2;max-width:650px;}
+.hlogo{margin-bottom:26px;}
+.hlogo img{height:90px;filter:invert(1) brightness(2);}
+.hey{display:inline-flex;align-items:center;gap:10px;font-size:0.72rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.hey::before{content:'';display:block;width:26px;height:1px;background:var(--gold);}
+h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.8rem,7vw,5rem);font-weight:900;line-height:0.95;color:var(--offwhite);margin-bottom:20px;text-transform:uppercase;}
+h1 em{color:var(--gold);font-style:normal;display:block;}
+.hsub{font-size:0.97rem;font-weight:300;line-height:1.78;color:var(--muted);max-width:450px;margin-bottom:24px;}
+.hero-phone{margin-bottom:28px;}
+.hero-phone-label{font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.hero-phone a{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:var(--offwhite);letter-spacing:0.04em;text-decoration:none;transition:color .2s;}
+.hero-phone a:hover{color:var(--gold);}
+.hcreds{display:flex;gap:9px;margin-bottom:28px;flex-wrap:wrap;}
+.hcred{display:flex;align-items:center;gap:6px;font-size:0.69rem;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;padding:6px 12px;border:1.5px solid rgba(200,146,42,0.4);background:rgba(200,146,42,0.06);color:var(--gold);border-radius:3px;}
+.bp{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:var(--navy);font-weight:600;font-size:0.82rem;letter-spacing:0.07em;text-transform:uppercase;padding:12px 24px;border:none;cursor:pointer;border-radius:var(--r);transition:all .2s;}
+.bp:hover{background:var(--gold2);}
+.bs{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--offwhite);font-weight:500;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;padding:12px 24px;border:1px solid rgba(255,255,255,0.13);cursor:pointer;border-radius:var(--r);transition:all .2s;margin-left:12px;}
+.bs:hover{border-color:var(--gold);color:var(--gold);}
+.hstats{position:absolute;right:5%;bottom:8%;display:flex;gap:42px;z-index:2;}
+.stn{font-family:'Barlow Condensed',sans-serif;font-size:2.5rem;font-weight:900;color:var(--offwhite);line-height:1;}
+.stn em{color:var(--gold);font-style:normal;}
+.stl{font-size:0.66rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-top:3px;}
+
+.sec{padding:68px 5%;}
+.seca{background:var(--navy2);}
+.lbl{font-size:0.67rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:13px;display:flex;align-items:center;gap:9px;}
+.lbl::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
+h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.8rem,4vw,2.9rem);font-weight:800;line-height:1;text-transform:uppercase;color:var(--offwhite);margin-bottom:16px;}
+.sub{font-size:0.94rem;font-weight:300;line-height:1.78;color:var(--muted);max-width:520px;margin-bottom:40px;}
+.big-phone{font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--gold);letter-spacing:0.04em;text-decoration:none;display:inline-block;margin-bottom:20px;}
+.big-phone:hover{color:var(--gold2);}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:5px;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;}
+.g4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:5px;}
+.gfeat{display:grid;grid-template-columns:2fr 1fr 1fr;gap:5px;}
+
+.scgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:rgba(200,146,42,0.1);border:1px solid rgba(200,146,42,0.1);}
+.sc{background:var(--navy);padding:30px 26px;transition:background .2s;}
+.sc:hover{background:var(--navy2);}
+.sci{font-size:1.1rem;margin-bottom:14px;}
+.sct{font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--offwhite);margin-bottom:9px;}
+.scd{font-size:0.83rem;line-height:1.6;color:var(--muted);}
+
+.wgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;}
+.wc{padding:24px;border:1px solid rgba(200,146,42,0.1);background:var(--navy);border-radius:var(--r);}
+.wn{font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:rgba(200,146,42,0.16);line-height:1;margin-bottom:9px;}
+.wt{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--offwhite);margin-bottom:6px;}
+.wd{font-size:0.81rem;line-height:1.65;color:var(--muted);}
+
+.callout{background:var(--navy3);border:1px solid rgba(200,146,42,0.14);border-left:3px solid var(--gold);padding:22px 26px;margin-bottom:40px;max-width:680px;}
+.calt{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--offwhite);margin-bottom:7px;}
+.calp{font-size:0.86rem;line-height:1.7;color:var(--muted);}
+.calp strong{color:var(--text);}
+
+.ph{display:flex;align-items:baseline;gap:14px;margin-bottom:16px;border-bottom:1px solid rgba(200,146,42,0.1);padding-bottom:12px;}
+.pn{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:rgba(200,146,42,0.18);line-height:1;}
+.pt{font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;color:var(--offwhite);}
+.pd{font-size:0.81rem;color:var(--muted);margin-top:3px;margin-bottom:14px;}
+
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px;}
+.tag{font-size:0.74rem;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;padding:6px 13px;border:1px solid rgba(200,146,42,0.22);color:var(--muted);border-radius:2px;}
+
+.lgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:rgba(200,146,42,0.07);border:1px solid rgba(200,146,42,0.07);}
+.lc{background:var(--navy);padding:18px 22px;}
+.lcy{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--offwhite);margin-bottom:2px;}
+.lct{font-size:0.69rem;color:var(--gold);letter-spacing:0.06em;text-transform:uppercase;}
+
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.tc{background:var(--navy2);border:1px solid rgba(200,146,42,0.1);padding:26px;border-radius:var(--r);}
+.tq{font-family:'Barlow Condensed',sans-serif;font-size:2.4rem;color:var(--gold);line-height:0.6;margin-bottom:9px;opacity:0.45;}
+.tt{font-size:0.88rem;line-height:1.75;color:var(--text);font-style:italic;margin-bottom:16px;font-weight:300;}
+.tn{font-size:0.76rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--offwhite);}
+.ts{font-size:0.71rem;color:var(--muted);margin-top:2px;}
+
+.stgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:26px;counter-reset:s;}
+.st{counter-increment:s;padding-left:18px;border-left:2px solid rgba(200,146,42,0.18);}
+.st::before{content:counter(s,decimal-leading-zero);font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;color:var(--gold);display:block;margin-bottom:9px;}
+.sttl{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;color:var(--offwhite);margin-bottom:5px;}
+.stde{font-size:0.8rem;line-height:1.6;color:var(--muted);}
+
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(200,146,42,0.1);}
+.cg{padding:22px 26px;border-right:1px solid rgba(200,146,42,0.1);}
+.cg:nth-child(even){border-right:none;}
+.cst{font-size:0.64rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:11px;}
+.clist{list-style:none;display:flex;flex-direction:column;gap:5px;}
+.clist li{font-size:0.8rem;color:var(--muted);display:flex;align-items:center;gap:7px;}
+.clist li::before{content:'';display:block;width:4px;height:4px;background:rgba(200,146,42,0.35);flex-shrink:0;}
+
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center;}
+.avals{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;}
+.av{padding:16px;background:var(--navy3);border-left:2px solid var(--gold);}
+.avt{font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--offwhite);margin-bottom:4px;}
+.avd{font-size:0.76rem;line-height:1.5;color:var(--muted);}
+
+.lcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-top:24px;}
+.lcard{padding:20px;background:var(--navy3);border:1px solid rgba(200,146,42,0.12);border-radius:var(--r);}
+.lcico{font-size:1.2rem;margin-bottom:10px;}
+.lctit{font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;font-weight:700;text-transform:uppercase;color:var(--offwhite);margin-bottom:4px;}
+.lcdesc{font-size:0.76rem;line-height:1.5;color:var(--muted);}
+.lcv{font-size:0.64rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-top:7px;display:block;}
+
+.phero{background:linear-gradient(135deg,var(--navy) 0%,#0f2035 100%);border-bottom:1px solid rgba(200,146,42,0.14);padding:60px 5% 48px;}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:0.67rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 11px;border:1px solid rgba(200,146,42,0.28);color:var(--gold);border-radius:2px;margin-bottom:16px;}
+
+.cwrap{display:grid;grid-template-columns:1fr 1.4fr;gap:68px;align-items:start;}
+.cinfo{display:flex;flex-direction:column;gap:24px;}
+.clbl{font-size:0.64rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+.cval{font-size:0.9rem;color:var(--text);}
+.cphone-block{background:var(--navy3);border:1px solid rgba(200,146,42,0.25);border-left:3px solid var(--gold);padding:20px 24px;border-radius:var(--r);}
+.cphone-label{font-size:0.64rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.cphone-num{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:var(--offwhite);letter-spacing:0.04em;line-height:1;}
+.cphone-num a{color:inherit;text-decoration:none;}
+.cphone-num a:hover{color:var(--gold);}
+.cphone-sub{font-size:0.75rem;color:var(--muted);margin-top:4px;}
+.cemail-block{background:var(--navy3);border:1px solid rgba(200,146,42,0.15);padding:16px 20px;border-radius:var(--r);}
+.cform{display:flex;flex-direction:column;gap:13px;}
+.crow{display:grid;grid-template-columns:1fr 1fr;gap:13px;}
+.fg{display:flex;flex-direction:column;gap:5px;}
+.fg label{font-size:0.68rem;font-weight:500;letter-spacing:0.11em;text-transform:uppercase;color:var(--muted);}
+.fg input,.fg select,.fg textarea{background:var(--navy2);border:1px solid rgba(255,255,255,0.07);color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.87rem;padding:10px 12px;border-radius:var(--r);outline:none;transition:border-color .2s;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:rgba(200,146,42,0.38);}
+.fg select option{background:var(--navy2);}
+.fg textarea{resize:vertical;min-height:105px;}
+.fsub{background:var(--gold);color:var(--navy);font-family:'DM Sans',sans-serif;font-size:0.81rem;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;padding:12px 24px;border:none;cursor:pointer;border-radius:var(--r);align-self:flex-start;}
+.fsub:hover{background:var(--gold2);}
+
+.rcgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;}
+.rc{background:var(--navy2);border:1px solid rgba(200,146,42,0.1);padding:24px;border-radius:var(--r);transition:all .25s;}
+.rc:hover{border-color:rgba(200,146,42,0.28);transform:translateY(-2px);}
+.rci{font-size:1.2rem;margin-bottom:11px;}
+.rct{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--offwhite);margin-bottom:6px;}
+.rcd{font-size:0.8rem;line-height:1.6;color:var(--muted);}
+
+footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding:48px 5% 32px;}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:36px;}
+.flogo img{height:44px;filter:invert(1) brightness(2);opacity:0.62;margin-bottom:12px;}
+.ftag{font-size:0.8rem;line-height:1.65;color:var(--muted);max-width:270px;margin-bottom:10px;}
+.fphone{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:900;color:var(--gold);letter-spacing:0.04em;margin-bottom:4px;}
+.fphone a{color:inherit;text-decoration:none;}
+.femail{font-size:0.8rem;color:var(--muted);}
+.femail a{color:var(--muted);text-decoration:none;}
+.femail a:hover{color:var(--offwhite);}
+.fh{font-size:0.63rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.flinks{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.flinks li{font-size:0.8rem;color:var(--muted);cursor:pointer;transition:color .2s;}
+.flinks li:hover{color:var(--offwhite);}
+.fbot{display:flex;justify-content:space-between;align-items:center;padding-top:22px;border-top:1px solid rgba(255,255,255,0.05);}
+.fcopy{font-size:0.7rem;color:var(--steel);}
+.flic{display:flex;gap:12px;}
+.flic span{font-size:0.66rem;letter-spacing:0.06em;color:var(--gold);}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(200,146,42,0.18),transparent);margin:16px 0;}
+
+@media(max-width:900px){
+  .hstats,.ls{display:none;}
+  .agrid,.cwrap,.fgrid,.g3,.g4,.gfeat{grid-template-columns:1fr;}
+  .g2{grid-template-columns:1fr;}
+  .cgrid{grid-template-columns:1fr;}
+  .nav-links,.nav-phone{display:none;}
+  .crow{grid-template-columns:1fr;}
+  .hero{min-height:auto;padding:40px 5% 60px;}
+  .hlogo img{height:70px;}
+}
+</style>
 </head>
-
 <body>
-  <!-- NAV -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <a class="brand" href="index.html">
-          <!-- If your file is named exactly logo-white.png, this will work -->
-          <img src="logo-white.png" alt="TK Remodeling logo" />
-          <div class="brand-text">
-            <strong>TK Remodeling</strong>
-            <span>Licensed &amp; Insured General Contractor</span>
-          </div>
-        </a>
 
-        <div class="nav-links">
-          <a href="projects.html">Commercial</a>
-          <a href="residential.html">Residential</a>
-          <a href="restoration.html">Restoration</a>
-          <a href="about.html">About</a>
-          <a class="cta" href="contact.html">Contact</a>
-        </div>
-      </nav>
+<div id="lb" onclick="closeLB()">
+  <div id="lb-close" onclick="closeLB()">&#215;</div>
+  <img id="lb-img" src="" alt="TK Remodeling project photo">
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo" onclick="showPage('home')"><img src="assets/TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
+    <div class="nav-links">
+      <button onclick="showPage('home')" id="nav-home" class="active">Home</button>
+      <button onclick="showPage('commercial')" id="nav-commercial">Commercial</button>
+      <button onclick="showPage('residential')" id="nav-residential">Residential</button>
+      <button onclick="showPage('restoration')" id="nav-restoration">Restoration</button>
+      <button onclick="showPage('about')" id="nav-about">About</button>
+      <button onclick="showPage('contact')" id="nav-contact">Contact</button>
     </div>
-  </header>
-
-  <!-- HERO -->
-  <main class="hero-wrap">
-    <div class="container">
-      <section class="hero">
-        <div class="hero-inner">
-          <div>
-            <div class="badge">Licensed • Insured • Commercial Focused</div>
-
-            <h1>Kansas City General Contractor<br/>Licensed &amp; Insured</h1>
-
-            <p class="lede">
-              Serving Greater Kansas City and Johnson County, Kansas.
-            </p>
-            <h2 style="margin:10px 0 0; font-size:18px; font-weight:700; color:rgba(255,255,255,.85);">
-              Commercial Tenant Improvement Contractor in Kansas City &amp; Johnson County, KS
-            </h2>
-
-            <p class="lede">
-              Delivering structured commercial build-outs and tenant improvements with disciplined scheduling and coordinated trades — built for projects that require coordination, not patchwork renovation.
-            </p>
-
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="projects.html">View Commercial Projects</a>
-              <a class="btn btn-ghost" href="contact.html">Request a Consultation</a>
-            </div>
-
-            <p class="detail">
-              Typical commercial scopes: <strong>2,000–10,000 SF</strong> build-outs and tenant improvements across office, medical, restaurant, retail, convenience, and spa/salon environments.
-            </p>
-          </div>
-
-          <aside class="deliver-card">
-            <h3>What We Deliver</h3>
-
-            <ul class="deliver-list">
-              <li class="deliver-item">
-                <strong>Tenant Improvements</strong>
-                <span>Build-outs, reconfiguration, finish + MEP coordination</span>
-              </li>
-
-              <li class="deliver-item">
-                <strong>Inspection-Ready Work</strong>
-                <span>Code compliance, permitting coordination, punch closeout</span>
-              </li>
-
-              <li class="deliver-item">
-                <strong>Spa &amp; Salon Build-Outs</strong>
-                <span>Plumbing density, ventilation, layout + inspection flow</span>
-              </li>
-
-              <li class="deliver-item">
-                <strong>Restoration Path</strong>
-                <span>Mitigation + full reconstruction (link will expand later)</span>
-              </li>
-            </ul>
-
-            <ul class="deliver-bullets">
-              <li>Clear scope, clear schedule, clear communication</li>
-              <li>Coordinated trades + disciplined site management</li>
-              <li>Clean turnover with documented closeout</li>
-            </ul>
-          </aside>
-        </div>
-      </section>
-    </div>
-
-    <!-- INDUSTRIES -->
-    <section class="section">
-      <div class="container">
-        <h2>Industries Served</h2>
-        <p class="sub">Spa &amp; Salon Build-Outs • Medical • Office • Restaurant • Retail • Convenience</p>
-
-        <div class="grid-3">
-          <div class="card">
-            <h3>Spa &amp; Salon Build-Outs</h3>
-            <p>High-density plumbing layouts, ventilation needs, and inspection coordination — built to pass and perform.</p>
-          </div>
-
-          <div class="card">
-            <h3>Medical &amp; Office</h3>
-            <p>Phased construction, code requirements, and tight schedules — with clean turnover and closeout.</p>
-          </div>
-
-          <div class="card">
-            <h3>Restaurant &amp; Retail</h3>
-            <p>Fast-moving projects that require trade coordination, punch discipline, and inspection readiness.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-</section>   <!-- whatever section ends above -->
-
-<section class="section">
-  <div class="container">
-    <h2>Commercial General Contractor Serving the Kansas City Metro</h2>
-    <p class="sub">
-      Delivering commercial build-outs and tenant improvements across the Kansas City metropolitan area — serving both Kansas and Missouri communities.
-    </p>
-
-    <div class="card" style="margin-bottom:20px;">
-      <h3>Kansas Cities Served</h3>
-      <p>
-        Overland Park • Olathe • Lenexa • Leawood • Prairie Village • Mission • Merriam • Shawnee • Roeland Park • Gardner • Spring Hill • De Soto • Basehor
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Missouri Cities Served</h3>
-      <p>
-        Kansas City, MO • North Kansas City • Liberty • Gladstone • Lee’s Summit • Independence • Blue Springs • Raytown • Grandview • Belton • Parkville • Platte City
-      </p>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="tel:9139955000" class="nav-phone"><div class="nav-phone-dot"></div>(913) 995-5000</a>
+      <button class="nav-cta" onclick="showPage('contact')">Get a Quote</button>
     </div>
   </div>
-</section>
-    <section class="section">
-  <div class="container">
-    <h2>What Clients Say</h2>
-    <p class="sub">
-      Commercial build-outs delivered with coordination and follow-through.
-    </p>
+</nav>
 
-    <div class="grid-3">
-      <div class="card">
-        <p>
-          “From the first walk-through to final inspection, TK stayed organized and kept everything moving.
-          Our salon opened on schedule and passed inspection without issues.”
-        </p>
-        <p style="margin-top:12px; font-weight:700;">
-          — Salon Owner, Overland Park
-        </p>
+<div class="lstrip">
+  <div class="li"><div class="ld"></div>Licensed — Kansas</div><div class="ls"></div>
+  <div class="li"><div class="ld"></div>Licensed — Missouri</div><div class="ls"></div>
+  <div class="li"><div class="ld"></div>Licensed — Indiana</div><div class="ls"></div>
+  <div class="li"><div class="ld"></div>Fully Insured &amp; Bonded</div><div class="ls"></div>
+  <div class="li"><div class="ld"></div>COI Available Same Day</div><div class="ls"></div>
+  <div class="lstrip-phone">&#128222; (913) 995-5000</div>
+</div>
+
+<!-- HOME -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hbg"></div><div class="hgrid"></div><div class="haccent"></div>
+    <div class="hcon">
+      <div class="hlogo"><img src="assets/TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
+      <div class="hey">Kansas City General Contractor</div>
+      <h1>Built For<em>Business.</em></h1>
+      <p class="hsub">Commercial build-outs, tenant improvements, and water restoration across Greater Kansas City and Johnson County. Owner-operated, licensed, insured — priced without the corporate overhead.</p>
+      <div class="hero-phone">
+        <div class="hero-phone-label">Call or Text Us</div>
+        <a href="tel:9139955000">(913) 995-5000</a>
       </div>
-
-      <div class="card">
-        <p>
-          “They were straightforward, responsive, and clear about scope and timing.
-          No surprises — just solid execution.”
-        </p>
-        <p style="margin-top:12px; font-weight:700;">
-          — Medical Office Tenant, Olathe
-        </p>
+      <div class="hcreds">
+        <div class="hcred">&#9646; Licensed KS · MO · IN</div>
+        <div class="hcred">&#9646; Fully Insured &amp; Bonded</div>
+        <div class="hcred">&#9646; Owner-Operated</div>
       </div>
+      <div>
+        <button class="bp" onclick="showPage('contact')">Request a Consultation &#8594;</button>
+        <button class="bs" onclick="showPage('commercial')">See Our Work</button>
+      </div>
+    </div>
+    <div class="hstats">
+      <div><div class="stn">10<em>+</em></div><div class="stl">Years in Business</div></div>
+      <div><div class="stn">$<em>1M</em></div><div class="stl">Max Project Size</div></div>
+      <div><div class="stn">3</div><div class="stl">State Licensed</div></div>
+    </div>
+  </div>
 
-      <div class="card">
-        <p>
-          “You can tell they’re used to commercial work. Trades were coordinated well and the closeout process was clean.”
-        </p>
-        <p style="margin-top:12px; font-weight:700;">
-          — Retail Client, Lenexa
-        </p>
+  <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:4px;height:360px;">
+    <div class="wm" style="height:360px;" onclick="openLB(this)"><img src="assets/projects/IMG_1072.jpg" alt="Nail salon build-out"><div class="cap">Spa &amp; Salon Build-Out</div></div>
+    <div style="display:grid;grid-template-rows:1fr 1fr;gap:4px;">
+      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="assets/projects/resi-kitchen-04.jpg" alt="Kitchen remodel" style="height:178px;"><div class="cap">Kitchen Remodel</div></div>
+      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="assets/projects/IMG_8051.JPG" alt="Retail build-out" style="height:178px;"><div class="cap">Retail Tenant Finish</div></div>
+    </div>
+    <div style="display:grid;grid-template-rows:1fr 1fr;gap:4px;">
+      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-07.jpg" alt="Finished basement" style="height:178px;"><div class="cap">Basement Finish</div></div>
+      <div class="wm" style="height:178px;" onclick="openLB(this)"><img src="assets/projects/resi-bath-02.jpg" alt="Bathroom remodel" style="height:178px;"><div class="cap">Bathroom Remodel</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="lbl">What We Do</div>
+    <h2>Built Around<br>Your Business</h2>
+    <p class="sub">From the first permit to certificate of occupancy — we coordinate every trade, manage every inspection, and keep your timeline intact.</p>
+    <div class="scgrid">
+      <div class="sc"><div class="sci">🏢</div><div class="sct">Commercial Build-Outs</div><p class="scd">Tenant improvements from 1,000–15,000 SF. Medical, retail, restaurants, salons — fully coordinated from demo to CO.</p></div>
+      <div class="sc"><div class="sci">✂️</div><div class="sct">Spa &amp; Salon Specialist</div><p class="scd">Specialized plumbing, ventilation, and health-code compliance. We've built multiple locations for repeat salon clients.</p></div>
+      <div class="sc"><div class="sci">💧</div><div class="sct">Water Restoration</div><p class="scd">Emergency mitigation, drying documentation, and full reconstruction. One contractor from damage call to finished space.</p></div>
+      <div class="sc"><div class="sci">🏠</div><div class="sct">Residential Remodeling</div><p class="scd">Kitchens, basements, bathrooms, and decks. Same structured commercial process applied to your home.</p></div>
+    </div>
+  </div>
+
+  <div class="sec seca">
+    <div class="lbl">Why TK Remodeling</div>
+    <h2>Big-Firm Quality.<br>Without the Big-Firm Price.</h2>
+    <p class="sub">Owner-operated and lean by design. You're not paying for a downtown office or a 10-person management layer — just licensed, experienced construction management focused on your project.</p>
+    <div class="wgrid">
+      <div class="wc"><div class="wn">01</div><div class="wt">Owner on Every Job</div><p class="wd">You deal directly with decision-makers. Faster answers, fewer surprises, tighter accountability.</p></div>
+      <div class="wc"><div class="wn">02</div><div class="wt">Competitive Pricing</div><p class="wd">Our lean model means we price competitively without cutting corners. Same licensed trades, lower overhead cost to you.</p></div>
+      <div class="wc"><div class="wn">03</div><div class="wt">Repeat-Client Focused</div><p class="wd">Most of our pipeline is returning clients building their next location with us. We earn long-term relationships by performing.</p></div>
+      <div class="wc"><div class="wn">04</div><div class="wt">Licensed &amp; Fully Insured</div><p class="wd">Licensed in KS, MO, and IN. General liability, workers' comp, and bonded on every project — no exposure for you.</p></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="lbl">Clients Say</div>
+    <h2>Built on Repeat Business</h2>
+    <div class="tgrid">
+      <div class="tc"><div class="tq">"</div><p class="tt">TK Remodeling coordinated everything — permits, inspections, every trade. We opened on time with zero surprises. That's rare in this industry.</p><div class="tn">Commercial Property Manager</div><div class="ts">Overland Park, KS</div></div>
+      <div class="tc"><div class="tq">"</div><p class="tt">They understand salon build-outs better than anyone we've worked with. Plumbing and ventilation done right the first time.</p><div class="tn">Nail Salon Owner</div><div class="ts">Johnson County, KS</div></div>
+      <div class="tc"><div class="tq">"</div><p class="tt">Professional from day one. Direct communication, no runaround. Finished on schedule and on budget.</p><div class="tn">Medical Office Client</div><div class="ts">Kansas City Metro</div></div>
+    </div>
+  </div>
+
+  <div class="sec seca">
+    <div class="lbl">Service Area</div>
+    <h2>Greater Kansas City<br>&amp; Surrounding Markets</h2>
+    <p class="sub">Primary coverage across the KC metro on both sides of the state line, plus commercial work in Indiana.</p>
+    <div class="cgrid">
+      <div class="cg"><div class="cst">Kansas Side</div><ul class="clist"><li>Olathe</li><li>Overland Park</li><li>Lenexa</li><li>Leawood</li><li>Prairie Village</li><li>Mission</li><li>Shawnee</li><li>Gardner</li></ul></div>
+      <div class="cg"><div class="cst">Missouri Side</div><ul class="clist"><li>Kansas City, MO</li><li>The Plaza</li><li>Blue Springs</li><li>Lee's Summit</li><li>Independence</li><li>Liberty</li><li>Raytown</li></ul></div>
+    </div>
+  </div>
+
+  <div class="sec" style="text-align:center;">
+    <h2>Ready to Start?</h2>
+    <p class="sub" style="margin:0 auto 14px;">Call, text, or fill out the form — we respond within one business day.</p>
+    <a href="tel:9139955000" class="big-phone">(913) 995-5000</a><br>
+    <button class="bp" onclick="showPage('contact')">Or Request a Free Consultation &#8594;</button>
+  </div>
+</div>
+
+<!-- COMMERCIAL -->
+<div class="page" id="page-commercial">
+  <div class="phero">
+    <div class="badge">&#9632; Commercial Division</div>
+    <h2>Commercial Construction<br>&amp; Tenant Improvements</h2>
+    <p class="sub" style="margin-bottom:0;">Licensed &amp; Insured — Kansas, Missouri &amp; Indiana. 1,000–15,000 SF build-outs with full trade coordination and direct owner involvement on every job.</p>
+  </div>
+  <div class="sec">
+    <div class="callout">
+      <div class="calt">Experienced. Licensed. Competitively Priced.</div>
+      <p class="calp">Same professionalism as larger GC firms — <strong>without the layers of overhead that drive up your costs.</strong> The person who bids your job manages it. No handoffs. No surprises.</p>
+    </div>
+    <div class="ph"><div class="pn">01</div><div><div class="pt">Spa &amp; Salon Build-Outs</div><div class="pd">Specialized nail salon and spa construction — plumbing, ventilation, health-code compliance, and luxury finishes.</div></div></div>
+    <div class="g2" style="margin-bottom:5px;">
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/IMG_1072.jpg" alt="Nail salon"><div class="cap">Pedicure Station Row</div></div>
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/IMG_6615.jpg" alt="Nail salon reception"><div class="cap">Reception &amp; Polish Wall</div></div>
+    </div>
+    <div class="g2" style="margin-bottom:48px;">
+      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="assets/projects/IMG_9790.jpg" alt="Nail salon"><div class="cap">Nail Station Build-Out</div></div>
+      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="assets/projects/IMG_9765.jpg" alt="Nail salon"><div class="cap">Salon Interior Finish</div></div>
+    </div>
+    <div class="ph"><div class="pn">02</div><div><div class="pt">Fitness &amp; Specialty Studios</div><div class="pd">HotWorx Overland Park — full studio build-out including sauna pod coordination, LVP flooring, and custom millwork.</div></div></div>
+    <div class="g2" style="margin-bottom:48px;">
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/CA0DBE97-E153-4FAE-B966-FA099CD2FD1E.JPG" alt="HotWorx lobby"><div class="cap">HotWorx — Lobby &amp; Reception</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/com-01.JPG" alt="HotWorx sauna pods"><div class="cap">HotWorx — Sauna Pod Corridor</div></div>
+    </div>
+    <div class="ph"><div class="pn">03</div><div><div class="pt">Restaurant &amp; Retail</div><div class="pd">Polished concrete, ACT ceilings, custom feature walls, and full interior finish coordination.</div></div></div>
+    <div class="g2" style="margin-bottom:48px;">
+      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="assets/projects/C6C09501-5662-4B5D-A282-48D0D27EBBA8.JPG" alt="Restaurant"><div class="cap">Restaurant Tenant Finish</div></div>
+      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="assets/projects/IMG_9478.jpg" alt="Restaurant"><div class="cap">Fast Casual Restaurant Build-Out</div></div>
+    </div>
+    <div class="ph"><div class="pn">04</div><div><div class="pt">Behind the Build</div><div class="pd">From rough framing and MEP coordination to slab prep — the foundation of every great finish.</div></div></div>
+    <div class="g4" style="margin-bottom:52px;">
+      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="assets/projects/IMG_8011.jpg" alt="Framing"><div class="cap">Metal Framing</div></div>
+      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="assets/projects/IMG_8110.jpg" alt="MEP"><div class="cap">MEP Coordination</div></div>
+      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="assets/projects/IMG_5195.jpg" alt="Slab"><div class="cap">Slab &amp; Radiant Floor</div></div>
+      <div class="wm" style="height:220px;" onclick="openLB(this)"><img src="assets/projects/IMG_7246.jpg" alt="Plumbing"><div class="cap">Plumbing Rough-In</div></div>
+    </div>
+    <div class="lbl">Where We've Worked</div><h2>Project Locations</h2>
+    <div class="lgrid" style="margin-bottom:52px;">
+      <div class="lc"><div class="lcy">Leawood, KS</div><div class="lct">Medical Office</div></div>
+      <div class="lc"><div class="lcy">Mission, KS</div><div class="lct">Medical Office</div></div>
+      <div class="lc"><div class="lcy">Lenexa, KS</div><div class="lct">Medical Office</div></div>
+      <div class="lc"><div class="lcy">The Plaza, KC</div><div class="lct">Medical Office</div></div>
+      <div class="lc"><div class="lcy">Overland Park, KS</div><div class="lct">Spa · Fitness · Retail</div></div>
+      <div class="lc"><div class="lcy">Blue Springs, MO</div><div class="lct">Medical Office</div></div>
+      <div class="lc"><div class="lcy">Indianapolis, IN</div><div class="lct">Medical Office</div></div>
+      <div class="lc"><div class="lcy">Olathe, KS</div><div class="lct">Commercial TI</div></div>
+    </div>
+    <div class="lbl">Our Process</div><h2>How We Work</h2>
+    <div class="stgrid">
+      <div class="st"><div class="sttl">Scope &amp; Permit</div><p class="stde">Full scope, permit pulling, code verification before work starts.</p></div>
+      <div class="st"><div class="sttl">Demo &amp; Layout</div><p class="stde">Selective demo, condition protection, precise wall and MEP layout.</p></div>
+      <div class="st"><div class="sttl">Rough &amp; MEP</div><p class="stde">Framing, mechanical, electrical, plumbing rough-ins — inspected before cover.</p></div>
+      <div class="st"><div class="sttl">Finishes</div><p class="stde">Drywall, ceilings, flooring, doors, millwork, paint — on schedule.</p></div>
+      <div class="st"><div class="sttl">Inspection &amp; CO</div><p class="stde">Final inspections, punch list closeout, certificate of occupancy.</p></div>
+    </div>
+  </div>
+  <div class="sec seca" style="text-align:center;">
+    <h2>Ready to Bid Your Project?</h2>
+    <p class="sub" style="margin:0 auto 12px;">Call or text us directly — we respond fast.</p>
+    <a href="tel:9139955000" class="big-phone">(913) 995-5000</a><br>
+    <button class="bp" onclick="showPage('contact')">Or Submit a Project Request &#8594;</button>
+  </div>
+</div>
+
+<!-- RESIDENTIAL -->
+<div class="page" id="page-residential">
+  <div class="phero">
+    <div class="badge">&#9632; Residential Division</div>
+    <h2>Residential Remodeling</h2>
+    <p class="sub" style="margin-bottom:0;">Same structured process as our commercial work — applied to your home. Licensed trades, disciplined coordination, direct communication every step of the way.</p>
+  </div>
+  <div class="sec">
+    <div class="ph"><div class="pn">01</div><div><div class="pt">Kitchen Remodels</div><div class="pd">Custom cabinetry, stone countertops, tile backsplash, lighting, electrical &amp; plumbing coordination.</div></div></div>
+    <div class="gfeat" style="margin-bottom:5px;">
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/resi-kitchen-04.jpg" alt="Kitchen"><div class="cap">White Shaker — Quartz Island</div></div>
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/IMG_9941.JPG" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
+      <div class="wm" style="height:320px;" onclick="openLB(this)"><img src="assets/projects/resi-kitchen-01.jpg" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
+    </div>
+    <div class="g2" style="margin-bottom:52px;">
+      <div class="wm" style="height:240px;" onclick="openLB(this)"><img src="assets/projects/IMG_9774.JPG" alt="Kitchen"><div class="cap">Large Kitchen Renovation</div></div>
+      <div class="wm" style="height:240px;" onclick="openLB(this)"><img src="assets/projects/resi-kitchen-07.jpg" alt="Kitchen"><div class="cap">Kitchen Remodel</div></div>
+    </div>
+    <div class="ph"><div class="pn">02</div><div><div class="pt">Basement Finishing</div><div class="pd">Custom bars, flooring, recessed lighting, and full permit coordination.</div></div></div>
+    <div class="g2" style="margin-bottom:5px;">
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-07.jpg" alt="Basement"><div class="cap">Stone Bar — Finished Basement</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-04.jpg" alt="Basement"><div class="cap">LVP Floor &amp; Bar</div></div>
+    </div>
+    <div class="g2" style="margin-bottom:52px;">
+      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-05.jpg" alt="Basement"><div class="cap">Wet Bar &amp; Carpet Finish</div></div>
+      <div class="wm" style="height:260px;" onclick="openLB(this)"><img src="assets/projects/resi-basement-06.jpg" alt="Basement"><div class="cap">Open Basement — Tile Floor</div></div>
+    </div>
+    <div class="ph"><div class="pn">03</div><div><div class="pt">Deck Construction</div><div class="pd">Permitted deck builds — single-family and multi-unit, elevated structures, railing systems, concrete footings.</div></div></div>
+    <div class="g2" style="margin-bottom:52px;">
+      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="assets/projects/IMG_7820.JPG" alt="Deck"><div class="cap">Elevated Deck — Treated Lumber</div></div>
+      <div class="wm" style="height:280px;" onclick="openLB(this)"><img src="assets/projects/resi-deck-03.jpg" alt="Deck"><div class="cap">Deck &amp; Covered Patio</div></div>
+    </div>
+    <div class="ph"><div class="pn">04</div><div><div class="pt">Bathroom Remodels</div><div class="pd">Luxury tile, custom tub surrounds, walk-in showers, vanities, and full plumbing coordination.</div></div></div>
+    <div class="g2" style="margin-bottom:52px;">
+      <div class="wm" style="height:340px;" onclick="openLB(this)"><img src="assets/projects/resi-bath-01.jpg" alt="Bathroom"><div class="cap">Calacatta Marble Tub Surround</div></div>
+      <div class="wm" style="height:340px;" onclick="openLB(this)"><img src="assets/projects/resi-bath-02.jpg" alt="Bathroom"><div class="cap">Walk-In Shower — Marble Slab</div></div>
+    </div>
+    <div class="ph"><div class="pn">05</div><div><div class="pt">Specialty &amp; Custom Work</div><div class="pd">Custom built-ins, fireplace surrounds, accent tile walls, and one-of-a-kind features.</div></div></div>
+    <div class="g2">
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/IMG_4836.JPG" alt="Fireplace"><div class="cap">Tile Fireplace Surround</div></div>
+      <div class="wm" style="height:300px;" onclick="openLB(this)"><img src="assets/projects/IMG_6453.JPG" alt="Bunk room"><div class="cap">Custom Built-In Bunk Room</div></div>
+    </div>
+  </div>
+  <div class="sec seca" style="text-align:center;">
+    <h2>Tell Us About Your Home Project</h2>
+    <p class="sub" style="margin:0 auto 12px;">Same coordination and communication as our commercial work — on every residential job.</p>
+    <a href="tel:9139955000" class="big-phone">(913) 995-5000</a><br>
+    <button class="bp" onclick="showPage('contact')">Or Get a Free Estimate &#8594;</button>
+  </div>
+</div>
+
+<!-- RESTORATION -->
+<div class="page" id="page-restoration">
+  <div class="phero">
+    <div class="badge">&#9632; TK Restoration</div>
+    <h2>Water Damage<br>Mitigation &amp; Restoration</h2>
+    <p class="sub" style="margin-bottom:0;">Emergency response, structured drying, documentation, and full reconstruction. Commercial and residential.</p>
+  </div>
+  <div class="sec">
+    <div class="lbl">Services</div><h2>We Handle It All</h2>
+    <div class="rcgrid">
+      <div class="rc"><div class="rci">🚨</div><div class="rct">Emergency Response</div><p class="rcd">Fast response to active water damage. Extraction, source ID, and immediate containment.</p></div>
+      <div class="rc"><div class="rci">💨</div><div class="rct">Structural Drying</div><p class="rcd">Commercial-grade air movers and dehumidifiers. Daily moisture readings and IICRC-compliant documentation.</p></div>
+      <div class="rc"><div class="rci">🔬</div><div class="rct">Mold Assessment</div><p class="rcd">Post-drying evaluation, mold risk assessment, and remediation coordination when required.</p></div>
+      <div class="rc"><div class="rci">🏗️</div><div class="rct">Full Reconstruction</div><p class="rcd">Complete rebuild — drywall, flooring, paint, millwork. One contractor, start to finish.</p></div>
+      <div class="rc"><div class="rci">📄</div><div class="rct">Insurance Docs</div><p class="rcd">Photo-documented moisture logs and scope reports formatted for insurance carrier review.</p></div>
+      <div class="rc"><div class="rci">📞</div><div class="rct">Commercial Priority</div><p class="rcd">We work around your operating hours and prioritize speed-to-dry to minimize business interruption.</p></div>
+    </div>
+  </div>
+  <div class="sec seca" style="text-align:center;">
+    <h2>Dealing With Water Damage?</h2>
+    <p class="sub" style="margin:0 auto 12px;">Call us directly — every hour matters with water damage.</p>
+    <a href="tel:9139955000" class="big-phone" style="font-size:2.4rem;">(913) 995-5000</a><br>
+    <button class="bp" onclick="showPage('contact')">Or Submit a Request &#8594;</button>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="page" id="page-about">
+  <div class="phero">
+    <div class="badge">&#9632; About TK Remodeling</div>
+    <h2>Licensed. Insured.<br>Owner-Operated.</h2>
+    <p class="sub" style="margin-bottom:0;">Based in Olathe, Kansas — built around repeat commercial clients across Greater Kansas City, Johnson County, and Indiana.</p>
+  </div>
+  <div class="sec">
+    <div class="agrid">
+      <div>
+        <div class="lbl">Who We Are</div>
+        <h2>Structured Work.<br>Direct Communication.</h2>
+        <p style="font-size:0.89rem;line-height:1.8;color:var(--muted);margin-bottom:18px;">We focus on structured commercial build-outs and tenant improvements — the kind of projects that require real coordination across trades, inspections, and regulatory compliance.</p>
+        <p style="font-size:0.89rem;line-height:1.8;color:var(--muted);margin-bottom:18px;">Owner-operated and lean on purpose. You deal directly with the people responsible for your job — not a coordinator reading from a handoff. That keeps costs lower and accountability higher.</p>
+        <p style="font-size:0.89rem;line-height:1.8;color:var(--muted);margin-bottom:26px;">Most of our work comes from repeat clients — property managers, salon owners, and medical groups building their next location with us because the first one went right.</p>
+        <div class="avals">
+          <div class="av"><div class="avt">Process-Driven</div><p class="avd">Defined scope, milestones, documented inspections — every time.</p></div>
+          <div class="av"><div class="avt">Owner on Every Job</div><p class="avd">You talk to the person running your project, not a middleman.</p></div>
+          <div class="av"><div class="avt">Repeat-Client Built</div><p class="avd">Most of our pipeline is returning clients. That's the report card that matters.</p></div>
+          <div class="av"><div class="avt">Honest Scopes</div><p class="avd">We flag problems before they become your problem. Always.</p></div>
+        </div>
+      </div>
+      <div class="wm" style="height:440px;" onclick="openLB(this)">
+        <img src="assets/projects/IMG_1072.jpg" alt="TK Remodeling project">
       </div>
     </div>
   </div>
-</section>
+  <div class="sec seca">
+    <div class="lbl">Credentials</div>
+    <h2>Licensed &amp; Fully Insured<br>in Three States</h2>
+    <p class="sub">Every project is covered — licensed trades, general liability, and workers' comp. No shortcuts, no exposure on your end.</p>
+    <div class="lcards">
+      <div class="lcard"><div class="lcico">🏛️</div><div class="lctit">Kansas GC License</div><p class="lcdesc">Licensed for commercial and residential GC work throughout Kansas, including Johnson County.</p><span class="lcv">✓ Verified &amp; Current</span></div>
+      <div class="lcard"><div class="lcico">🏛️</div><div class="lctit">Missouri GC License</div><p class="lcdesc">Licensed for commercial and residential GC work throughout Missouri including KCMO and Blue Springs.</p><span class="lcv">✓ Verified &amp; Current</span></div>
+      <div class="lcard"><div class="lcico">🏛️</div><div class="lctit">Indiana Registration</div><p class="lcdesc">Registered and insured for commercial tenant finish work in Marion County, Indiana.</p><span class="lcv">✓ Verified &amp; Current</span></div>
+      <div class="lcard"><div class="lcico">🛡️</div><div class="lctit">General Liability</div><p class="lcdesc">Full GL coverage on every project. COI available same day upon request.</p><span class="lcv">✓ Fully Covered</span></div>
+      <div class="lcard"><div class="lcico">👷</div><div class="lctit">Workers' Comp</div><p class="lcdesc">Workers' comp on all job sites. No liability exposure from our crew on your project.</p><span class="lcv">✓ Fully Covered</span></div>
+      <div class="lcard"><div class="lcico">📋</div><div class="lctit">Surety Bond</div><p class="lcdesc">Bonded for commercial and residential projects across all licensed states.</p><span class="lcv">✓ Bonded</span></div>
+    </div>
+  </div>
+</div>
 
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container">
-        <small>© 2026 TK Remodeling. Serving Greater Kansas City &amp; Johnson County, Kansas.</small>
+<!-- CONTACT -->
+<div class="page" id="page-contact">
+  <div class="phero">
+    <div class="badge">&#9632; Get In Touch</div>
+    <h2>Let's Talk About<br>Your Project</h2>
+    <p class="sub" style="margin-bottom:0;">Call, text, or fill out the form. We respond to all inquiries within one business day.</p>
+  </div>
+  <div class="sec">
+    <div class="cwrap">
+      <div class="cinfo">
+        <div><div class="lbl">Contact Info</div><h2>Based in<br>Olathe, KS</h2></div>
+        <div class="cphone-block">
+          <div class="cphone-label">Call or Text</div>
+          <div class="cphone-num"><a href="tel:9139955000">(913) 995-5000</a></div>
+          <div class="cphone-sub">Emergency water damage calls answered immediately</div>
+        </div>
+        <div class="cemail-block">
+          <div class="clbl">Email</div>
+          <div class="cval"><a href="mailto:contact@tkremodel.com" style="color:var(--text);text-decoration:none;">contact@tkremodel.com</a></div>
+        </div>
+        <div><div class="clbl">Service Area</div><div class="cval">Greater Kansas City · Johnson County, KS · Indianapolis, IN</div></div>
+        <div><div class="clbl">Response Time</div><div class="cval">Within 1 business day · Emergencies answered immediately</div></div>
+        <div class="divider"></div>
+        <div><div class="clbl" style="margin-bottom:9px;">Licensed &amp; Insured In</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><div class="tag">Kansas</div><div class="tag">Missouri</div><div class="tag">Indiana</div></div></div>
+        <div style="background:var(--navy2);border:1px solid rgba(200,146,42,0.14);border-left:3px solid var(--gold);padding:16px 20px;border-radius:var(--r);">
+          <div class="clbl" style="margin-bottom:5px;">Need a COI?</div>
+          <p style="font-size:0.8rem;line-height:1.6;color:var(--muted);">Certificate of Insurance available same day upon request.</p>
+        </div>
       </div>
-    </footer>
-  </main>
+      <div>
+        <div class="lbl">Request a Consultation</div>
+        <div class="cform">
+          <div class="crow">
+            <div class="fg"><label>First Name</label><input type="text" placeholder="John"></div>
+            <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith"></div>
+          </div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="john@example.com"></div>
+          <div class="fg"><label>Phone</label><input type="tel" placeholder="(913) 000-0000"></div>
+          <div class="fg"><label>Project Type</label>
+            <select>
+              <option value="">Select...</option>
+              <option>Commercial Tenant Finish</option>
+              <option>Spa / Nail Salon Build-Out</option>
+              <option>Medical Office Build-Out</option>
+              <option>Fitness / Specialty Studio</option>
+              <option>Water Damage / Restoration</option>
+              <option>Residential Remodel</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg"><label>Project Location</label><input type="text" placeholder="City, State"></div>
+          <div class="fg"><label>Project Description</label><textarea placeholder="Tell us about your space, square footage, timeline, and what you're looking to accomplish..."></textarea></div>
+          <button class="fsub" onclick="handleSubmit()">Submit Request &#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fgrid">
+    <div>
+      <div class="flogo"><img src="assets/TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
+      <p class="ftag">Licensed &amp; Insured General Contractor — Greater Kansas City &amp; Johnson County. Owner-operated. Competitively priced. Repeat-client focused.</p>
+      <div class="fphone"><a href="tel:9139955000">(913) 995-5000</a></div>
+      <div class="femail"><a href="mailto:contact@tkremodel.com">contact@tkremodel.com</a></div>
+    </div>
+    <div>
+      <div class="fh">Pages</div>
+      <ul class="flinks">
+        <li onclick="showPage('home')">Home</li>
+        <li onclick="showPage('commercial')">Commercial</li>
+        <li onclick="showPage('residential')">Residential</li>
+        <li onclick="showPage('restoration')">Restoration</li>
+        <li onclick="showPage('about')">About</li>
+        <li onclick="showPage('contact')">Contact</li>
+      </ul>
+    </div>
+    <div>
+      <div class="fh">Services</div>
+      <ul class="flinks">
+        <li>Tenant Improvements</li>
+        <li>Spa &amp; Salon Build-Outs</li>
+        <li>Medical Offices</li>
+        <li>Water Mitigation</li>
+        <li>Residential Remodeling</li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <div class="fcopy">© 2025 TK Remodeling Inc. · Olathe, Kansas · All rights reserved.</div>
+    <div class="flic"><span>Licensed KS</span><span>·</span><span>Licensed MO</span><span>·</span><span>Licensed IN</span><span>·</span><span>Fully Insured</span></div>
+  </div>
+</footer>
+
+<script>
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-links button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  var btn=document.getElementById('nav-'+id);
+  if(btn) btn.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function openLB(el){
+  var img=el.querySelector('img');
+  if(!img) return;
+  document.getElementById('lb-img').src=img.src;
+  document.getElementById('lb').classList.add('open');
+}
+function closeLB(){
+  document.getElementById('lb').classList.remove('open');
+  document.getElementById('lb-img').src='';
+}
+function handleSubmit(){
+  var name=document.querySelector('input[placeholder="John"]').value;
+  if(!name){alert('Please fill in your name.');return;}
+  window.location.href='mailto:contact@tkremodel.com?subject=Project%20Inquiry%20from%20'+encodeURIComponent(name)+'&body=I%20submitted%20a%20request%20from%20tkremodel.com';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB();});
+</script>
 </body>
 </html>
