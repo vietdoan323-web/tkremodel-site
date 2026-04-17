@@ -51,6 +51,8 @@ nav{position:sticky;top:0;z-index:200;background:rgba(13,27,42,0.97);backdrop-fi
 
 .hero{min-height:90vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6% 5%;}
 .hbg{position:absolute;inset:0;background:linear-gradient(135deg,#0d1b2a 0%,#162235 60%,#1a2d44 100%);}
+.hbg-photo{position:absolute;inset:0;background-image:url('IMG_8011.jpg');background-size:cover;background-position:center;filter:grayscale(100%) brightness(0.28);z-index:0;}
+.hbg-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,27,42,0.93) 0%,rgba(13,27,42,0.82) 55%,rgba(22,34,53,0.72) 100%);z-index:1;}
 .hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(200,146,42,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(200,146,42,0.035) 1px,transparent 1px);background-size:60px 60px;}
 .haccent{position:absolute;right:-8%;top:8%;width:52%;height:88%;background:linear-gradient(135deg,rgba(22,34,53,0.85),rgba(42,64,96,0.3));border-left:2px solid rgba(200,146,42,0.12);clip-path:polygon(8% 0,100% 0,100% 100%,0% 100%);}
 .hcon{position:relative;z-index:2;max-width:650px;}
@@ -255,7 +257,7 @@ footer{background:var(--navy);border-top:1px solid rgba(200,146,42,0.12);padding
 <!-- HOME -->
 <div class="page active" id="page-home">
   <div class="hero">
-    <div class="hbg"></div><div class="hgrid"></div><div class="haccent"></div>
+    <div class="hbg"></div><div class="hbg-photo"></div><div class="hbg-overlay"></div><div class="hgrid"></div><div class="haccent"></div>
     <div class="hcon">
       <div class="hlogo"><img src="TK_LOGO_VECTOR-01.jpg" alt="TK Remodeling"></div>
       <div class="hey">Kansas City General Contractor</div>
